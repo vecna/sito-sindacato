@@ -7,7 +7,6 @@ weight: 2
 
 The implementation of facial recognition in public and private spaces represents today one of the most insidious and pervasive threats to our civil liberties. This technology, imposed from above and deployed without any real democratic consent or transparency, transforms our bodies and our features into extractable commodities, feeding a mass surveillance infrastructure that normalises institutional control throughout Europe. We have tried to resist through institutional channels — and having seen their limits, we are beginning to experiment with self-defence practices...
 
-
 Activist campaigns such as *Reclaim Your Face*[^1] have been denouncing this techno-authoritarian drift for years, reaffirming the urgency of organising a radical, grassroots reaction against mass biometrics[^2].
 
 ## The approach: resistance through make-up and adversarial methods
@@ -16,7 +15,7 @@ Faced with the arrogance of algorithmic surveillance, digital self-defence evolv
 
 ## The tools released: taking back control of technology
 
-To transform theory into a tool for struggle, we have developed and gathered *open-source* resources designed to test defences directly on our own devices, without surrendering a single byte to corporate servers. On the portal [vecna.eu](https://vecna.eu/) we publish documentation and repositories focused on digital self-defence and AI countermeasures. Above all, we call you to digital action: try our web app **Ghostmaxxing**, available at [sindacato.nina.watch/ghostati](https://sindacato.nina.watch/ghostati). It is a testing tool that uses local recognition models to let you experience in real time the effectiveness of adversarial make-up via your webcam. **Use it, study it, and fork it from our GitHub** to deconstruct its mechanisms, improve the code, and create new interfaces of technological resistance[^5].
+To transform theory into a tool for struggle, we have developed and gathered *open-source* resources designed to test defences directly on our own devices. Try the web app **Ghostmaxxing!**, available at [sindacato.nina.watch/ghostati](https://sindacato.nina.watch/ghostati). It is a testing tool that uses local recognition models to let you experience in real time the effectiveness of adversarial make-up via your webcam. **Use it, study it, and fork it from our GitHub** to deconstruct its mechanisms, improve the code, and create new interfaces of technological resistance[^5].
 
 ### 4. The practice: bodies, experimentation, and the call to the NINA Festival
 
@@ -24,8 +23,8 @@ Algorithms are not only fought on servers — they are fought on bodies. The eff
 
 ---
 
-[^1]: European Citizens' Initiative "Reclaim Your Face" (2021), *Ban on mass biometric surveillance practices*, reclaimyourface.eu.
-[^2]: Privacy Network (2022), *Observatory on facial recognition in Italy and the risks to civil rights*, Annual Report.
-[^3]: Yinpeng Dong et al. (2021), *Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition*, arXiv:2105.03162.
-[^4]: Adversarial Robustness Toolbox (ART), *Official documentation on Spatial Evasion techniques and DPatch*, IBM.
-[^5]: Hermes Center (2020), *Open Source Tools for the Defence of Digital Rights*, operational manual.
+[^1]: European Citizens' Initiative [Reclaim Your Face](https://reclaimyourface.eu) (2021), for the *ban on mass biometric surveillance practices*.
+[^2]: Privacy Network, [SARI enterprise](https://privacy-network.it/digital-surveillance/rapporti/sari-enterprise/), report.
+[^3]: Yinpeng Dong et al. (2021), [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/pdf/2105.03162).
+[^4]: [Adversarial Robustness Toolbox](https://adversarial-robustness-toolbox.readthedocs.io/en/latest/) (ART), *official documentation on Spatial Evasion techniques and DPatch*, IBM.
+[^5]: Ghostmaxxing on GitHub, [vecna/ghostati](https://github.com/vecna/ghostati).

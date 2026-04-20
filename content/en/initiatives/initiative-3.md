@@ -19,27 +19,27 @@ The following analyses provide usable figures for developing the research.
 
 ### Instagram
 
-For Instagram, the most useful numbers for attributing or inferring the economic value of user behaviour are: approximately 2 billion monthly active global users, an advertising audience of approximately 1.91 billion people globally, approximately 179.9 million users reachable with advertising in the United States, and an estimate of 143.2 million active users in the United States. On the revenue side, one estimate places US advertising revenues at $42.52 billion in 2026. On the attention side, estimates of time spent diverge: approximately 33.9 minutes per day according to one source and 73 minutes per day according to another; furthermore, the average user reportedly opens the app more than 12 times per day. Other useful signals are the fact that 53% of advertising placements are reportedly on Reels, that 60% of consumers reportedly interact with brand content multiple times per week, that 29% of users reportedly make purchases on the platform, that approximately 130 million users click on shopping posts every month, and that Instagram Shopping is reportedly associated with approximately $40 billion in gross merchandise value (GMV). From these data one can derive synthetic indicators such as approximately $236 per US advertising user per year, approximately $297 per active US user per year, approximately $19.7 per month per monetisable user, approximately $0.65 per day, approximately $0.054 per session, and an attention value of between approximately $0.0089 and $0.0191 per minute depending on the assumption about time spent.
+For Instagram, the most useful numbers for attributing or inferring the economic value of user behaviour are: approximately 2 billion monthly active global users, an advertising audience of approximately 1.91 billion people globally, approximately 179.9 million users reachable with advertising in the United States, and an estimate of 143.2 million active users in the United States. On the revenue side, one estimate places US advertising revenues at $42.52 billion in 2026. On the attention side, estimates of time spent diverge: approximately 33.9 minutes per day according to one source and 73 minutes per day according to another; furthermore, the average user reportedly opens the app more than 12 times per day. Other useful signals are the fact that 53% of advertising placements are reportedly on Reels, that 60% of consumers reportedly interact with brand content multiple times per week, that 29% of users reportedly make purchases on the platform, that approximately 130 million users click on shopping posts every month, and that Instagram Shopping is reportedly associated with approximately $40 billion in gross merchandise value (GMV). From these data one can derive synthetic indicators such as approximately $236 per US advertising user per year, approximately $297 per active US user per year, approximately $19.7 per month per monetisable user, approximately $0.65 per day, approximately $0.054 per session, and an attention value of between approximately $0.0089 and $0.0191 per minute depending on the assumption about time spent.[^1][^2]
 
 ### Facebook
 
-For Facebook, the most useful values exist primarily as proxies, because much data is published by Meta at the ecosystem level rather than per individual platform. Meta reported $200.966 billion in total revenues in 2025, of which $196.175 billion from advertising, 3.58 billion daily active people in the family of apps in December 2025, and a global annual ARPP of $57.03, where ARPP means average revenue per person. For Facebook in the stricter sense, estimates speak of approximately 3.07 billion monthly active global users, a global advertising audience of approximately 2.28 billion people, and approximately 197 million users reachable with advertising in the United States. A secondary estimate places time spent at approximately 31 minutes per day in the United States. If one uses Meta's total advertising revenue relative to Facebook's advertising reach, one obtains a very rough measure of approximately $86 per reachable advertising user per year — but it is important to remember that this is not a "pure" Facebook value: it is an indirect estimate based on multi-platform revenues.
+For Facebook, the most useful values exist primarily as proxies, because much data is published by Meta at the ecosystem level rather than per individual platform. Meta reported $200.966 billion in total revenues in 2025, of which $196.175 billion from advertising, 3.58 billion daily active people in the family of apps in December 2025, and a global annual ARPP of $57.03, where ARPP means average revenue per person. For Facebook in the stricter sense, estimates speak of approximately 3.07 billion monthly active global users, a global advertising audience of approximately 2.28 billion people, and approximately 197 million users reachable with advertising in the United States. A secondary estimate places time spent at approximately 31 minutes per day in the United States. If one uses Meta's total advertising revenue relative to Facebook's advertising reach, one obtains a very rough measure of approximately $86 per reachable advertising user per year — but it is important to remember that this is not a "pure" Facebook value: it is an indirect estimate based on multi-platform revenues.[^3][^4]
 
 ### YouTube
 
-For YouTube, the quantitative base is more solid because advertising revenues are reported directly by quarter: approximately $8.93 billion in Q1 2025, $9.8 billion in Q2, $10.3 billion in Q3, and $11.383 billion in Q4, for an annual total of approximately $40.413 billion in advertising revenues. In addition, Alphabet indicated that YouTube's total revenues from advertising and subscriptions exceeded $60 billion in 2025. On the user side, the global advertising reach is estimated at approximately 2.53 billion people and that in the United States at approximately 253 million; a separate estimate places global active users at approximately 2.58 billion. On the attention side, in the United Kingdom the average daily time was reported at approximately 51 minutes per day. These figures allow the construction of two synthetic indicators: approximately $16 per global advertising user per year if only advertising is considered, and approximately $23.7 per global advertising user per year as a minimum threshold if one uses the "over $60 billion" figure that includes both advertising and subscriptions.
+For YouTube, the quantitative base is more solid because advertising revenues are reported directly by quarter: approximately $8.93 billion in Q1 2025, $9.8 billion in Q2, $10.3 billion in Q3, and $11.383 billion in Q4, for an annual total of approximately $40.413 billion in advertising revenues. In addition, Alphabet indicated that YouTube's total revenues from advertising and subscriptions exceeded $60 billion in 2025. On the user side, the global advertising reach is estimated at approximately 2.53 billion people and that in the United States at approximately 253 million; a separate estimate places global active users at approximately 2.58 billion. On the attention side, in the United Kingdom the average daily time was reported at approximately 51 minutes per day. These figures allow the construction of two synthetic indicators: approximately $16 per global advertising user per year if only advertising is considered, and approximately $23.7 per global advertising user per year as a minimum threshold if one uses the "over $60 billion" figure that includes both advertising and subscriptions.[^5][^6]
 
 ### TikTok
 
-For TikTok, the most important values combine audience breadth, intensity of use, and estimated advertising revenues. The platform communicated a community of over 200 million users in Europe and over 200 million users in the United States, as well as approximately 7.5 million US businesses present in the ecosystem. The global advertising reach is estimated at around 1.59 billion people, while in the United States the adult (18+) advertising reach is estimated at approximately 136 million. The average daily time in the United States is estimated at approximately 52 minutes per day, a value that makes TikTok particularly relevant in attention-based analyses. On the revenue side, a forecast places global advertising revenues 2025 at approximately $32.4 billion, while a US estimate speaks of approximately $11.2 billion. From these values one can infer approximately $20.4 per global advertising user per year and approximately $82 per adult US advertising-reachable user per year. In summary, TikTok appears particularly interesting when one wants to value user behaviour not only in terms of user base, but above all in terms of captured time and advertising monetisation density.
+For TikTok, the most important values combine audience breadth, intensity of use, and estimated advertising revenues. The platform communicated a community of over 200 million users in Europe and over 200 million users in the United States, as well as approximately 7.5 million US businesses present in the ecosystem. The global advertising reach is estimated at around 1.59 billion people, while in the United States the adult (18+) advertising reach is estimated at approximately 136 million. The average daily time in the United States is estimated at approximately 52 minutes per day, a value that makes TikTok particularly relevant in attention-based analyses. On the revenue side, a forecast places global advertising revenues 2025 at approximately $32.4 billion, while a US estimate speaks of approximately $11.2 billion. From these values one can infer approximately $20.4 per global advertising user per year and approximately $82 per adult US advertising-reachable user per year. In summary, TikTok appears particularly interesting when one wants to value user behaviour not only in terms of user base, but above all in terms of captured time and advertising monetisation density.[^7][^8]
 
 ### Snapchat
 
-Snapchat is useful because it combines revenue, usage, and subscription metrics in a fairly transparent manner. Snap reported approximately $5.93 billion in total revenues in 2025, of which $1.72 billion in Q4 and approximately $1.48 billion in advertising revenues in the same quarter. In Q4 2025 the platform reported 946 million MAU (monthly active users), 474 million DAU (daily active users), 24 million Snapchat+ subscribers, and an ARPU of $3.62, where ARPU means average revenue per user. The global advertising reach is estimated at approximately 709 million people, with approximately 106 million in the United States. Average usage time is placed at around 30 minutes per day. These data allow the construction of at least three levels of analysis of behavioural value: approximately $6.27 per monthly active user per year, approximately $12.51 per daily active user per year, and a direct willingness-to-pay component represented by the 24 million paying Snapchat+ users.
+Snapchat is useful because it combines revenue, usage, and subscription metrics in a fairly transparent manner. Snap reported approximately $5.93 billion in total revenues in 2025, of which $1.72 billion in Q4 and approximately $1.48 billion in advertising revenues in the same quarter. In Q4 2025 the platform reported 946 million MAU (monthly active users), 474 million DAU (daily active users), 24 million Snapchat+ subscribers, and an ARPU of $3.62, where ARPU means average revenue per user. The global advertising reach is estimated at approximately 709 million people, with approximately 106 million in the United States. Average usage time is placed at around 30 minutes per day. These data allow the construction of at least three levels of analysis of behavioural value: approximately $6.27 per monthly active user per year, approximately $12.51 per daily active user per year, and a direct willingness-to-pay component represented by the 24 million paying Snapchat+ users.[^9][^10]
 
 ### X / Twitter
 
-For X, the available figures are more fragmented, but still useful for inferring the value of user behaviour. Estimates place global 2025 advertising revenues at approximately $2.26 billion and US revenues at approximately $1.31 billion. The global advertising reach is estimated at approximately 586 million people, while that in the United States is approximately 104 million. On the attention side, one estimate places average US usage at approximately 34.1 minutes per day. X also provides a very useful signal on willingness to pay through its subscription tiers: $3 per month or $32 per year for Basic, $8 per month or $84 per year for Premium, and $40 per month or $395 per year for Premium+. Combining reach and advertising revenues yields approximate values of approximately $3.86 per global advertising user per year and approximately $12.6 per US advertising user per year. In this case, the value of behaviour can be read both as advertising value per reachable user and as a signal of propensity to pay for advanced features, visibility, and status.
+For X, the available figures are more fragmented, but still useful for inferring the value of user behaviour. Estimates place global 2025 advertising revenues at approximately $2.26 billion and US revenues at approximately $1.31 billion. The global advertising reach is estimated at approximately 586 million people, while that in the United States is approximately 104 million. On the attention side, one estimate places average US usage at approximately 34.1 minutes per day. X also provides a very useful signal on willingness to pay through its subscription tiers: $3 per month or $32 per year for Basic, $8 per month or $84 per year for Premium, and $40 per month or $395 per year for Premium+. Combining reach and advertising revenues yields approximate values of approximately $3.86 per global advertising user per year and approximately $12.6 per US advertising user per year. In this case, the value of behaviour can be read both as advertising value per reachable user and as a signal of propensity to pay for advanced features, visibility, and status.[^11][^12]
 
 ## Monetary value data
 
@@ -91,43 +91,70 @@ Here is a proposal:
 
 ### Section 1 — Presence
 
-year of registration
-years of regular use
-any breaks
+* year of registration
+* years of regular use
+* (any breaks)
 
 ### Section 2 — Time
 
-days/week
-sessions/day
-minutes/day
+* days per week
+* sessions per day
+* minutes per day (or per session)
 
 ### Section 3 — Activity
 
-consumption
-interaction
-production
+* consumption
+* interaction
+* production
 
 ### Section 4 — Output
 
-number of contents
-creation time
-management time
+* number of published contents
+* content type (comments, text, videos)
+* creation time
+* management time
 
 ### Section 5 — Reach
 
-followers/friends/subscribers
-average views
-average engagement
+* followers/friends/subscribers
+* average views
+* average engagement
 
 ### Section 6 — Indirect monetisation
 
-ads viewed
-clicks
-purchases
-subscriptions/payments
+* ads viewed
+* clicks
+* purchases
+* subscriptions/payments
 
 ### Section 7 — Centrality
 
-social/professional use
-dependency
-replaceability
+* social/professional use
+* dependency
+* replaceability
+
+---
+
+[^1]: For a **synthetic overview** of Instagram users, growth, platform history, and key orders of magnitude, this Backlinko compilation is a good starting point. It is a **secondary source**: useful for quick orientation, but best read as a compilation rather than official disclosure. [Backlinko](https://backlinko.com/instagram-users)
+
+[^2]: To understand **how attention on Instagram is converted into monetisation**, this Sprout Social page compiles data on ad reach, time spent, Reels, shopping, consumer behaviour, and platform marketing metrics. This is also a **curated source**, useful above all for interpreting numbers through a commercial lens. [Sprout Social](https://sproutsocial.com/insights/instagram-stats/)
+
+[^3]: For Facebook, the most important document is Meta's **official annual results release**: it clarifies ecosystem scale, advertising revenues, daily active people, and aggregate metrics such as ARPP. It is the best source for understanding why many Facebook values in this text are treated as **proxies** rather than pure single-platform data. [Meta](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx)
+
+[^4]: This DataReportal page is useful for contextualising Facebook's **advertising audience, geographic spread, and methodological caveats**. It is particularly useful because it stresses that **ad reach is not the same as monthly active users**, helping readers interpret passages that transform audience into value estimates. [DataReportal](https://datareportal.com/essential-facebook-stats)
+
+[^5]: For YouTube, the primary source is Alphabet's **official earnings release**: it includes YouTube quarterly advertising revenues and the statement that total revenues from advertising and subscriptions surpassed $60 billion in 2025. This is the strongest base for reading the platform's economic value. [Alphabet](https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf)
+
+[^6]: This DataReportal page helps read the **user and advertising-reach side** of YouTube: reachable audience size, adoption distribution, and caution points when comparing ad reach and active users. It is a good introduction to the usage context of non-monetary data. [DataReportal](https://datareportal.com/essential-youtube-stats)
+
+[^7]: For TikTok, this **official newsroom** communication is useful because it shows how the platform narrates its own scale: more than 200 million people in Europe and more than 200 million in the United States. It is a valuable source for understanding the **growth narrative** and the starting point for user-value estimates. [TikTok Newsroom](https://newsroom.tiktok.com/tiktok-community-in-europe-tops-200-million?lang=en-150)
+
+[^8]: This DataReportal page is useful for reading TikTok through **advertising reach, penetration, and operational definitions** used in measurement. It is particularly useful if you want to distinguish between total users, adult advertising-reachable audience, and figures that can be used in monetisation calculations. [DataReportal](https://datareportal.com/essential-tiktok-stats)
+
+[^9]: For Snapchat, the best starting point is Snap's **official investor letter**: it contains revenues, active users, Snapchat+ subscribers, and other metrics needed to understand how the platform extracts value from attention, subscriptions, and advertising. It is a very useful primary source for economic reading. [Snap](https://s25.q4cdn.com/442043304/files/doc_financials/2025/q4/Snap-Inc-Q4-2025-Investor-Letter.pdf)
+
+[^10]: This DataReportal page helps place Snapchat in its **advertising and demographic scale**: reach, audience distribution, and methodological definitions. It is especially useful for moving from company-level data to exposure and potential monetisation data. [DataReportal](https://datareportal.com/essential-snapchat-stats)
+
+[^11]: For X, this Reuters article is useful because it explains the logic behind **advertising revenue estimates** in the absence of financial disclosures comparable to listed companies. It is therefore a good introduction to why X numbers in this text are more fragmented and often treated as estimates. [Reuters](https://www.reuters.com/technology/x-report-first-annual-ad-revenue-growth-since-musks-takeover-data-shows-2025-03-26/)
+
+[^12]: To read the **willingness-to-pay side**, the most direct source is X's official pricing page for Basic, Premium, and Premium+. It is useful because it adds another dimension to advertising value: the price that part of the user base accepts to pay for visibility, advanced features, and status. [X Help Center](https://help.x.com/en/premium-plus-price-update)

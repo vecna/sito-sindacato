@@ -16,7 +16,7 @@ Di fronte all'arroganza della sorveglianza algoritmica, l'autodifesa digitale ev
 
 ## Gli strumenti rilasciati: riprendere il controllo della tecnologia
 
-Per trasformare la teoria in strumento di lotta, abbiamo sviluppato e raccolto risorse *open-source* pensate per testare le difese direttamente sui nostri dispositivi, senza cedere un solo byte ai server corporate. Sul portale [vecna.eu](https://vecna.eu/) pubblichiamo documentazione e repository focalizzati sull'autodifesa digitale e sulle contromisure all'IA. Soprattutto, vi chiamiamo all'azione digitale: provate la nostra web-app **Ghostati**, disponibile su [sindacato.nina.watch/ghostati](https://sindacato.nina.watch/ghostati). Si tratta di uno strumento di test che usa modelli di riconoscimento locale per farvi sperimentare in tempo reale l'efficacia del trucco avversariale tramite la vostra webcam. **Usatela, studiatela e forkatela dal nostro GitHub** per decostruirne i meccanismi, migliorarne il codice e creare nuove interfacce di resistenza tecnologica[^5].
+Per trasformare la teoria in strumento di lotta, abbiamo sviluppato e raccolto risorse *open-source* pensate per testare le difese direttamente sui nostri dispositivi. Provate la web-app **Ghostmaxxing!**, disponibile a [sindacato.nina.watch/ghostati](https://sindacato.nina.watch/ghostati). Si tratta di uno strumento di test che usa modelli di riconoscimento locale per farvi sperimentare in tempo reale l'efficacia del trucco avversariale tramite la vostra webcam. **Usatela, studiatela e forkatela dal nostro GitHub** per decostruirne i meccanismi, migliorarne il codice e creare nuove interfacce di resistenza tecnologica[^5].
 
 ### 4. La pratica: corpi, sperimentazione e la chiamata al NINA Festival
 
@@ -24,8 +24,8 @@ Gli algoritmi non si combattono solo sui server, ma sui corpi. L'efficacia di qu
 
 ---
 
-[^1]: Iniziativa dei cittadini europei "Reclaim Your Face" (2021), *Divieto delle pratiche di sorveglianza biometrica di massa*, reclaimyourface.eu.
-[^2]: Privacy Network (2022), *Osservatorio sul riconoscimento facciale in Italia e i rischi per i diritti civili*, Report annuale.
-[^3]: Yinpeng Dong et al. (2021), *Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition*, arXiv:2105.03162.
-[^4]: Adversarial Robustness Toolbox (ART), *Documentazione ufficiale sulle tecniche di Evasione Spaziale e DPatch*, IBM.
-[^5]: Hermes Center (2020), *Strumenti Open Source per la difesa dei diritti digitali*, manuale operativo.
+[^1]: Iniziativa dei cittadini europei [Reclaim Your Face](https://reclaimyourface.eu) (2021), Per il *divieto delle pratiche di sorveglianza biometrica di massa*.
+[^2]: Privacy Network [SARI enterprise](https://privacy-network.it/digital-surveillance/rapporti/sari-enterprise/), rapporto.
+[^3]: Yinpeng Dong et al. (2021), [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/pdf/2105.03162).
+[^4]: [Adversarial Robustness Toolbox]( https://adversarial-robustness-toolbox.readthedocs.io/en/latest/) (ART), *Documentazione ufficiale sulle tecniche di Evasione Spaziale e DPatch*, IBM.
+[^5]: Ghostmaxxing su github [vecna/ghostati](https://github.com/vecna/ghostati).
