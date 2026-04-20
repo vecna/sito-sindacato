@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="page-content sidenote-layout">
+  <div class="content-body">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <div class="initiative-list">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="initiative-card">
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.subtitle }}<p class="initiative-subtitle">{{ . }}</p>{{ end }}
+        {{ with .Summary }}<p class="initiative-summary">{{ . }}</p>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

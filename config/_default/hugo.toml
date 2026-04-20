@@ -1,0 +1,19 @@
+baseURL = "https://sindacato.nina.watch/"
+title = "Sindacato Universale Digitale"
+defaultContentLanguage = "it"
+defaultContentLanguageInSubdir = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.footnote]
+        # Standard Goldmark footnotes enabled by default
+
+[taxonomies]
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]

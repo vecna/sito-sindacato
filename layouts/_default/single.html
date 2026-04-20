@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="page-content sidenote-layout">
+  <div class="content-body">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<h2>{{ . }}</h2>{{ end }}
+    {{ with .Date }}<time class="page-date" datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>{{ end }}
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

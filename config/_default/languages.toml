@@ -1,0 +1,15 @@
+[it]
+  languageName = "Italiano"
+  contentDir = "content/it"
+  weight = 1
+  [it.params]
+    homeLabel = "Il Sindacato"
+    initiativesLabel = "Le Iniziative"
+
+[en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 2
+  [en.params]
+    homeLabel = "The Union"
+    initiativesLabel = "Initiatives"

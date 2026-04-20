@@ -1,0 +1,27 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  <p><strong>Errore shortcode csv_table:</strong> parametro <code>src</code> mancante.</p>
+{{- else -}}
+  {{- $url := $src | relURL -}}
+  {{- $filename := path.Base $src -}}
+  {{- $title := .Get "title" | default $filename -}}
+  {{- $maxRows := .Get "maxRows" | default "4" -}}
+  {{- $downloadName := .Get "download" | default $filename -}}
+  <section class="csv-table" data-csv-table data-src="{{ $url }}" style="--csv-max-rows: {{ $maxRows }};">
+    <header class="csv-table__header">
+      <h4 class="csv-table__title">{{ $title }}</h4>
+      <div class="csv-table__meta">
+        <span class="csv-table__count" data-csv-count>Caricamento righe...</span>
+        <a class="csv-table__download" href="{{ $url }}" download="{{ $downloadName }}">Download CSV</a>
+      </div>
+    </header>
+
+    <div class="csv-table__viewport" data-csv-viewport aria-live="polite">
+      <p class="csv-table__status" data-csv-status>Caricamento tabella...</p>
+    </div>
+
+    <noscript>
+      <p>Per visualizzare la tabella serve JavaScript. Puoi scaricare il file qui: <a href="{{ $url }}" download="{{ $downloadName }}">{{ $downloadName }}</a>.</p>
+    </noscript>
+  </section>
+{{- end -}}

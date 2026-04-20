@@ -1,0 +1,17 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="nav-main">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="nav-link{{ if eq .Weight 1 }} nav-home{{ end }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+    <div class="nav-lang">
+      {{ range hugo.Sites }}
+        {{ $langURL := printf "/%s/" .Language.Lang }}
+        <a href="{{ $langURL }}" class="lang-link{{ if eq $.Language.Lang .Language.Lang }} lang-active{{ end }}">
+          {{ upper .Language.Lang }}
+        </a>
+      {{ end }}
+    </div>
+  </nav>
+</header>

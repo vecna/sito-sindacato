@@ -1,0 +1,9 @@
+[[main]]
+  name = "The Union"
+  pageRef = "/"
+  weight = 1
+
+[[main]]
+  name = "Initiatives"
+  pageRef = "/initiatives/"
+  weight = 2

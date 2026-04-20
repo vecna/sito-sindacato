@@ -1,0 +1,16 @@
+[[main]]
+  name = "Sindacato"
+  pageRef = "/"
+  weight = 1
+
+[[main]]
+  name = "Iniziative"
+  pageRef = "/iniziative/"
+  weight = 2
+
+[[main]]
+  name = "Chi"
+  url = "https://nina.watch"
+  weight = 3
+  [[main.params]]
+    rel = 'external'
