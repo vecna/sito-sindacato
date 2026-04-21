@@ -2,6 +2,8 @@
 title: "Sindacato"
 ---
 
+_questa è la beta_
+
 # il Sindacato Universale Digitale
 
 Nel lessico dell’economia digitale domina una parola ingannevole: _utente_. Il termine utente suggerisce passività, consumo, utilizzo marginale di un servizio.Ma il cosiddetto utente, nella realtà dell’infrastruttura digitale contemporanea, non è solo un consumatore. È un **produttore di valore**.[^1]
