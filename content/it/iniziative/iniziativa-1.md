@@ -6,8 +6,7 @@ weight: 1
 ---
 
 
-La selezione del personale è stata trasformata in un problema di calcolo: si presume che una vita sia misurabile e comparabile. Il **curriculum** è lo stampo di questa idea. Costringe chi lavora a comprimere la propria storia in parole chiave, ruoli, risultati e date. Tutto ciò che non sta in un elenco (contraddizioni, contesti di cura, percorsi irregolari) va rimosso. Le sezioni vuote sono una pecca, e quindi? Pensiamo fuori dal secchio...
-
+La selezione del personale è stata trasformata in un problema di calcolo: si presume che una vita sia misurabile e comparabile. Il **curriculum** è lo stampo di questa idea. Costringe chi lavora a comprimere la propria storia in parole chiave, ruoli, risultati e date. Tutto ciò che non sta in un elenco (contraddizioni, contesti di cura, percorsi irregolari) va rimosso. Dovrebbe essere vietato, ma sappiamo succede. E quindi? Pensiamo fuori dal secchio...
 
 Questo è solo l’inizio [^1] della catena disumanizzante: l’aspirante lavoratore deve produrre una sintesi competitiva di sé, poi qualcun altro deve ipotizzare cosa sappia fare questa persona. È già un filtro brutale quando umano, ma nella così detta era dell’automazione in cui dovremmo essere, questo sistema automatizzato non ascolta, ma classifica in una lista dal quale prendere i primi tre o cinque candidati per le fasi successive.[^2]
 
