@@ -1,15 +1,19 @@
 {{ define "main" }}
-<article class="page-content sidenote-layout">
-  <div class="content-body">
+<article class="page-content">
+  <div class="content-body-wide">
+    <div class="label">{{ site.Title }}</div>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 
-    <div class="initiative-list">
+    <div class="projects-grid">
       {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="initiative-card">
-        <h3>{{ .Title }}</h3>
-        {{ with .Params.subtitle }}<p class="initiative-subtitle">{{ . }}</p>{{ end }}
-        {{ with .Summary }}<p class="initiative-summary">{{ . }}</p>{{ end }}
+      <a href="{{ .RelPermalink }}" class="project-card"
+         {{ with .Params.card_color }}style="--card-bg: {{ . }}"{{ end }}>
+        <div>
+          <h3>{{ .Title }}</h3>
+          {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+        </div>
+        <span class="project-arrow">&rarr;</span>
       </a>
       {{ end }}
     </div>

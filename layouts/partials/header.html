@@ -1,17 +1,25 @@
-<header class="site-header">
+<header>
   <nav class="site-nav">
-    <div class="nav-main">
-      {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="nav-link{{ if eq .Weight 1 }} nav-home{{ end }}">{{ .Name }}</a>
-      {{ end }}
+    {{- $homeEntry := index .Site.Menus.main 0 -}}
+    <a href="{{ $homeEntry.URL }}" class="nav-logo">{{ $homeEntry.Name }}</a>
+
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
     </div>
-    <div class="nav-lang">
-      {{ range hugo.Sites }}
-        {{ $langURL := printf "/%s/" .Language.Lang }}
-        <a href="{{ $langURL }}" class="lang-link{{ if eq $.Language.Lang .Language.Lang }} lang-active{{ end }}">
+
+    <ul class="nav-links" id="nav-links">
+      {{- range after 1 .Site.Menus.main }}
+      <li><a href="{{ .URL }}" class="nav-link">{{ .Name }}</a></li>
+      {{- end }}
+      <li class="spacer"></li>
+      {{- range hugo.Sites }}
+      <li>
+        <a href="/{{ .Language.Lang }}/"
+           class="nav-link lang-link{{ if eq $.Language.Lang .Language.Lang }} lang-active{{ end }}">
           {{ upper .Language.Lang }}
         </a>
-      {{ end }}
-    </div>
+      </li>
+      {{- end }}
+    </ul>
   </nav>
 </header>

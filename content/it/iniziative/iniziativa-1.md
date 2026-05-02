@@ -18,11 +18,11 @@ Qui entra _Really Human Resources_. Non chiediamo una tecnologia che si sforzi 
 
 ## La sequenza operativa
 
-Vari componenti ci sono in gioco, segui su XXX-SITO-TODO per vedere come stanno procedendo, e considerando la natura open source e decentralizzata dello sforzo, considera la partecipazione:
+Vari componenti ci sono in gioco, segui questa pagina per vedere come stanno procedendo. Considerando la natura open source e decentralizzata dello sforzo, considera la partecipazione:
 
-1. **Piattaforma di leaking** con anonimato forte per far emergere regole interne, metriche e procedure.
+1. **Piattaforma di leaking** con anonimato forte per far emergere regole interne, metriche e procedure, disponibile a [raccontaci.nina.watch](https://raccontaci.nina.watch). **Questo è il primo passo: la mappatura del fenomeno**.
     
-2. **Cartografia dei filtri** per capire dove si produce lo scarto automatico: i software usati dalle aziende, i portali ed i loro filtri. Saper dare un nome al problema.
+2. **Cartografia dei filtri** per capire dove si produce lo scarto automatico: i software usati dalle aziende, i portali ed i loro filtri. Saper dare un nome al problema - non abbiamo ancora mappato questa situazione.
     
 3. **Strumenti aperti di candidatura assistita** costruiti con sviluppatori e persone in cerca di lavoro: riducono il costo della candidatura e permettono di misurare il processo. Effetto collaterale politico: rompere la fiducia nei numeri.
     
