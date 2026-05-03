@@ -1,0 +1,15 @@
+{{- $src := .Get "src" -}}
+{{- $href := .Get "href" -}}
+{{- $alt := default "" (.Get "alt") -}}
+{{- $class := default "" (.Get "class") -}}
+{{- $resource := resources.Get $src -}}
+
+{{- if not $resource -}}
+  {{- errorf "linked_image shortcode: resource %q not found for page %q" $src .Page.File.Path -}}
+{{- end -}}
+
+<figure class="linked-image{{ if $class }} {{ $class }}{{ end }}">
+  <a href="{{ $href }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ $resource.RelPermalink }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  </a>
+</figure>

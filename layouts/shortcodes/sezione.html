@@ -1,0 +1,9 @@
+{{- $sfondo := .Get "sfondo" -}}
+{{- $titolo := .Get "titolo" -}}
+
+<section class="text-section" style="background-color: {{ $sfondo }};">
+  {{- with $titolo -}}
+    <div class="label">{{ . }}</div>
+  {{- end -}}
+  {{ .Inner | markdownify }}
+</section>

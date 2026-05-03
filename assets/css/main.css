@@ -132,6 +132,23 @@ blockquote {
   color: var(--color-text-muted);
 }
 
+.linked-image {
+  width: 100%;
+  margin: 1.25rem 0;
+}
+
+.linked-image a {
+  display: block;
+  width: 100%;
+}
+
+.linked-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 ul, ol {
   margin-bottom: 1.2em;
   padding-left: 1.4em;
@@ -530,11 +547,11 @@ header {
   margin-right: 0.5rem;
 }
 
-.demo-row {
-  display: flex;
+.color-demo {
   gap: 1rem;
   flex-wrap: wrap;
   margin: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 

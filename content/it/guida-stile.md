@@ -10,15 +10,36 @@ weight: 99
 
 I colori del sito sono definiti come variabili CSS in `assets/css/main.css`. Per cambiarli, modifica le variabili `:root` in cima al file.
 
-<div class="demo-row">
+<table>
+<tr>
+<td class="color-demo">
   <div><span class="color-swatch" style="background:#0a0a0a"></span> <code>--black</code> #0a0a0a</div>
+</td>
+<td class="color-demo">
   <div><span class="color-swatch" style="background:#f5f0e8"></span> <code>--white</code> #f5f0e8</div>
+  </td>
+</tr>
+<tr>
+<td class="color-demo">
   <div><span class="color-swatch" style="background:#c8f500"></span> <code>--lime</code> #c8f500</div>
+</td><td class="color-demo">
   <div><span class="color-swatch" style="background:#ff2d6b"></span> <code>--pink</code> #ff2d6b</div>
+</td>
+</tr>
+<tr>
+<td class="color-demo">
   <div><span class="color-swatch" style="background:#b48cff"></span> <code>--purple</code> #b48cff</div>
+</td><td class="color-demo">
   <div><span class="color-swatch" style="background:#00e5ff"></span> <code>--cyan</code> #00e5ff</div>
+</td>
+</tr>
+<tr>
+<td class="color-demo">
   <div><span class="color-swatch" style="background:#ffe600"></span> <code>--yellow</code> #ffe600</div>
-</div>
+</td>
+
+</tr>
+</table>
 
 I colori delle initiative cards ciclano automaticamente: pink → purple → lime → cyan. Per sovrascrivere il colore di una card specifica, aggiungi nel front matter dell'iniziativa:
 
@@ -126,6 +147,35 @@ Per creare una sezione con sfondo colorato (come la vision/mission su nina.watch
   <div class="label">Visione</div>
   <p>Questa sezione ha sfondo lime (il colore di accento). Il testo è scuro per contrasto. Funziona bene per blocchi di dichiarazione, citazioni importanti o call-to-action.</p>
 </div>
+
+---
+
+## Sezione con sfondo controllato
+
+Usando lo shortcode `sezione` puoi creare blocchi con sfondo controllato.
+
+Parametri disponibili:
+
+- `sfondo`: usa un colore con il codice #000000.
+- `titolo`: etichetta mostrata in alto nella sezione
+- contenuto interno: blocco Markdown (testo, link, liste, enfasi)
+
+Esempio 1:
+
+{{< sezione sfondo="#ff2d6b" titolo="Missione" >}}
+Questo blocco usa uno sfondo e supporta **Markdown**.
+
+Puoi inserire anche [link](#) e testo su piu righe.
+{{< /sezione >}}
+
+Esempio 2:
+
+{{< sezione sfondo="#c8f500" titolo="Call to Action" >}}
+ecco un esempio di markdown:
+
+- Punto chiave 1
+- Punto chiave 2
+{{< /sezione >}}
 
 ---
 

@@ -5,17 +5,27 @@ date: 2026-04-05
 weight: 3
 ---
 
-Tu lavori per i social media: sei la loro fonte di reddito. Più persone vengono incasellate ad *utenti* e più queste piattaforme prendono valore, influenza, e potere. Facciamoci riconoscere questo valore. Iniziamo dal calcolare quanti soldi ci deve Facebook (e le altre grandi piattaforme dello sfruttamento). È chiaro che Meta e nessuna piattaforma ritenga di dover alcunchè a chiunque. Ma questo non significa che non si possa fare pressione: per questo dobbiamo essere in molti!
+Tu lavori per i social media[^0]: sei la loro fonte di reddito. Più persone vengono incasellate ad *utenti* e più queste piattaforme prendono valore, influenza, e potere. Facciamoci riconoscere questo valore. Iniziamo dal calcolare quanti soldi ci deve Facebook (e le altre grandi piattaforme dello sfruttamento). È chiaro che Meta e nessuna piattaforma ritenga di dover alcunchè a chiunque. Ma questo non significa che non si possa fare pressione: per questo dobbiamo essere in molti!
 
 Sulla base di quante persone riporteranno la loro volontà ad un rimborso totale o parziale, forniremo opzioni.
 
-## L'obiettivo
+{{< sezione sfondo="#00e5ff" titolo="L'obiettivo" >}}
 
-Esplorare ogni modo possibile per rendere visibile la quantità di valore
+# Esplorare ogni modo possibile per rendere visibile la quantità di valore, ed esigere restituzione.
 
-## Riferimenti e spunti numerici
+{{< /sezione >}}
 
-Seguono analisi che forniscono numeri utilizzabili per sviluppare la ricerca.
+### Domenica 10 Maggio 2026, presso la redazione di **Scomodo**, Via Jean Jaures, 22, Milano:
+
+{{<linked_image
+	src="images/Evento QSTDF Milano Domenica.png"
+	href="https://supporta.nina.watch/milano"
+	alt="Evento Quanti Soldi ti deve Facebook? a Milano"
+>}}
+
+# Riferimenti e stime economiche
+
+Abbiamo selezionato più piattaforme che la sola Facebook, di seguito trovi paragrafi e dati che forniscono numeri utilizzabili per sviluppare la ricerca.
 
 ### Instagram
 
@@ -76,58 +86,57 @@ Differenze principali rispetto ai precedenti:
 
 {{< csv_table src="/data/social-platforms-other.csv" title="Altre piattaforme other (CSV)" maxRows="4" >}}
 
-## Come impostare un questionario per la mappatura del valore del comportamento?
+# Come mappare lo sfruttamento da social?
 
-Quello che vogliamo misurare, per poi criticare o rivendicare, è:
-quanto tempo consegna alla piattaforma
-quanto lavoro gratuito di contenuto fornisce,
-quanto traffico e attenzione attira dagli altri,
-quanto è monetizzabile come target pubblicitario e commerciale
+Le "parti" della vita catturate da questi business non si misurano solo in tempo, ma in una moltitudine di risorse cognitive che più o meno visibilmente vengono sottratte. 
 
-La sequenza di domande potrebbe andare da:
-presenza → intensità → produzione → audience → monetizzazione → dipendenza.
+> Quello che vogliamo misurare, per poi criticare o rivendicare, è:
+> quanto tempo consegna alla piattaforma
+> quanto lavoro gratuito di contenuto fornisce,
+> quanto traffico e attenzione attira dagli altri,
+> quanto è monetizzabile come target pubblicitario e commerciale
 
-Qui una proposta:
+Non abbiamo un vero e proprio **questionario** ma una lista di ambiti che potrebbero aiutare nel far emergere quanto valore viene ceduto agli oligopolisti digitali:
 
-### Sezione 1 — Presenza
+### Risorsa 1 — Presenza
 
 * anno di iscrizione
 * anni di uso regolare
 * (eventuali pause)
 
-### Sezione 2 — Tempo
+### Risorsa 2 — Tempo
 
 * giorni alla settimana
 * sessioni al giorno
 * minuti al giorno (o per sessione)
 
-### Sezione 3 — Attività
+### Risorsa 3 — Attività
 
 * consumo
 * interazione
 * produzione
 
-### Sezione 4 — Output
+### Risorsa 4 — Output
 
 * numero di contenuti pubblicati
 * tipologia di contenuti (commenti, testi, video)
 * tempo di creazione
 * tempo di gestione
 
-### Sezione 5 — Portata
+### Risorsa 5 — Portata
 
 * follower/amici/iscritti
 * visualizzazioni medie
 * engagement medio
 
-### Sezione 6 — Monetizzazione indiretta
+### Risorsa 6 — Monetizzazione indiretta
 
 * annunci visti
 * click
 * acquisti
 * abbonamenti/pagamenti
 
-### Sezione 7 — Centralità
+### Risorsa 7 — Centralità
 
 * uso sociale/professionale
 * dipendenza
@@ -135,6 +144,7 @@ Qui una proposta:
 
 ---
 
+[^0]: **Anche detti**: Sistemi di manipolazione della realtà, che portano individui a credere in realtà personalizzata e non per forza reale. Ufficialmente si sostengono mescolando questa illusione allap pubblicità, ufficiosamente mappano la società tutta per venderla a chi vuole influenzarla.
 
 [^1]: Per una **panoramica sintetica** su utenti, crescita, cronologia della piattaforma e principali ordini di grandezza di Instagram, questa raccolta di Backlinko è un buon punto di partenza. È una **fonte secondaria**: utile per orientarsi rapidamente, ma da leggere come compilazione e non come disclosure ufficiale. [Backlinko](https://backlinko.com/instagram-users)
 
