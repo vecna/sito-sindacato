@@ -1,0 +1,28 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Risorse Veramente Umane",
+    "url": "https://sindacato.nina.watch/it/iniziative/risorse-veramente-umane",
+    "events": [
+        {
+            "name": "Risorse Veramente Umane",
+            "url": "https://sindacato.nina.watch/it/iniziative/risorse-veramente-umane",
+            "startDate": "2026-05-09",
+            "location": {
+                "name": "Milano",
+                "url": "https://supporta.nina.watch/milano"
+            },
+            "description": "Risorse Veramente Umane: laboratorio per analizzare e contrastare l'uso algoritmico dei dati personali nelle selezioni del personale."
+        },
+        {
+            "name": "Risorse Veramente Umane",
+            "url": "https://sindacato.nina.watch/it/iniziative/risorse-veramente-umane",
+            "startDate": "2026-05-10",
+            "location": {
+                "name": "Roma",
+                "url": "https://supporta.nina.watch/roma"
+            },
+            "description": "Risorse Veramente Umane: laboratorio per analizzare e contrastare l'uso algoritmico dei dati personali nelle selezioni del personale."
+        }
+    ]
+}

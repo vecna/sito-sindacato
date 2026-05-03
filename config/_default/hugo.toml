@@ -14,6 +14,11 @@ defaultContentLanguageInSubdir = true
 [taxonomies]
 
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "RSS", "SITEMAP"]
   section = ["HTML"]
   page = ["HTML"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"

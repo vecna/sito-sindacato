@@ -12,6 +12,14 @@ Ciò che viene chiamato _universo delle piattaforme_ non è altro che un’immen
 
 La grande trasformazione economica del XXI secolo consiste precisamente in questo: **la cattura** **sistematica della generalità dell’esperienza umana come materia prima, come mezzo di** **produzione, come valore economico e finanziario**.[^3]
 
+---
+
+# L'avvio del Sindacato durante il Festival di NINA
+
+<a href="/it/eventi" class="btn">Gli eventi al Lancio</a>
+ 
+Unisciti a noi a Milano e Roma il 9 e 10 Maggio 2026 per workshop, sperimentazioni e incontri.
+
 ## Necessità di un sindacato universale digitale
 
 Ogni forma storica di lavoro ha generato, prima o poi, forme di organizzazione collettiva. La fabbrica industriale ha generato il sindacato operaio e le società di mutuo soccorso.Anche l’essere digitale deve compiere questo decisivo passo di autodifesa della propria classe che coincide con la salvaguardia e la sopravvivenza dell’intera specie. 

@@ -1,0 +1,42 @@
+{{ $lang := .Language.Lang }}
+{{ $isHome := .IsHome }}
+{{ $relDataPath := "" }}
+
+{{ if $isHome }}
+  {{ $relDataPath = "_index" }}
+{{ else }}
+  {{/* .File.Dir contains a trailing slash, e.g., 'iniziative/' or '' */}}
+  {{ $dir := .File.Dir }}
+  {{ $base := .File.TranslationBaseName }}
+  {{ $relDataPath = printf "%s%s" $dir $base }}
+{{ end }}
+
+{{/* Paths */}}
+{{ $jsonPath := printf "data/%s/%s.json" $lang $relDataPath }}
+{{ $ogpPath := printf "data/%s/%s.ogp" $lang $relDataPath }}
+
+{{/* Include OGP */}}
+{{ if fileExists $ogpPath }}
+  {{ readFile $ogpPath | safeHTML }}
+{{ else }}
+  <!-- Fallback OGP -->
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ site.Title }}">
+  {{ $img := resources.Get "images/NINA-square-icon.png" }}
+  <meta property="og:image" content="{{ if $img }}{{ $img.Permalink }}{{ else }}{{ "/images/NINA-square-icon.png" | absURL }}{{ end }}">
+  <meta property="og:description" content="{{ .Summary | default site.Params.description | truncate 160 }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+{{ end }}
+
+{{/* Include JSON-LD */}}
+{{ if fileExists $jsonPath }}
+  <script type="application/ld+json">
+  {{ readFile $jsonPath | safeJS }}
+  </script>
+{{ end }}
+
+{{/* Include oEmbed */}}
+{{ $oembedStaticPath := printf "static/%s/%s/oembed.json" $lang $relDataPath }}
+{{ if fileExists $oembedStaticPath }}
+  <link rel="alternate" type="application/json+oembed" href="/{{ $lang }}/{{ $relDataPath }}/oembed.json">
+{{ end }}

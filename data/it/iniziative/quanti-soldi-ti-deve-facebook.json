@@ -1,0 +1,16 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Quanti Soldi ti deve Facebook?",
+    "url": "https://sindacato.nina.watch/it/iniziative/quanti-soldi-ti-deve-facebook",
+    "event": {
+        "name": "Quanti Soldi ti deve Facebook?",
+        "url": "https://sindacato.nina.watch/it/iniziative/quanti-soldi-ti-deve-facebook",
+        "startDate": "2026-05-10",
+        "location": {
+            "name": "Milano",
+            "url": "https://supporta.nina.watch/milano"
+        },
+        "description": "Sperimentazione di nuove forme di negoziazione per il lavoro digitale."
+    }
+}

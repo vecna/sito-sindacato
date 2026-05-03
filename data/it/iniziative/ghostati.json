@@ -1,0 +1,30 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Ghòstati!",
+    "url": "https://sindacato.nina.watch/it/iniziative/ghostati",
+    "repository": "https://github.com/vecna/ghostati",
+    "webapplication": "https://sindacato.nina.watch/ghostati",
+    "events": [
+        {
+            "name": "Ghòstati!",
+            "url": "https://sindacato.nina.watch/it/iniziative/ghostati",
+            "startDate": "2026-05-09",
+            "location": {
+                "name": "Milano",
+                "url": "https://supporta.nina.watch/milano"
+            },
+            "description": "Vieni con trucchi o con una faccia a tua disposizione, per provare quanto è facile ingannare la sorveglianza."
+        },
+        {
+            "name": "Ghòstati!",
+            "url": "https://sindacato.nina.watch/it/iniziative/ghostati",
+            "startDate": "2026-05-10",
+            "location": {
+                "name": "Roma",
+                "url": "https://supporta.nina.watch/roma"
+            },
+            "description": "Vieni con trucchi o con una faccia a tua disposizione, per provare quanto è facile ingannare la sorveglianza."
+        }
+    ]
+}
