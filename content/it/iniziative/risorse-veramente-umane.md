@@ -43,6 +43,8 @@ Noi riteniamo sia illecito, disumanizzante, e ingiusto. Raccogliere testimonanze
 
 ## Gli eventi di lancio
 
+Queste le [slide di presentazione](/it/eventi/presentazione-RVU-Festival-2026.html).
+
 ### Milano, 9 Maggio 2026
 
 {{<linked_image
