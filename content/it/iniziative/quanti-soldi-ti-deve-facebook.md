@@ -15,6 +15,12 @@ Sulla base di quante persone riporteranno la loro volontà ad un rimborso totale
 
 {{< /sezione >}}
 
+* La presentazione di [Quanti Soldi ti deve Facebook?](/pdf/festival-26/Quanti_soldi_ti_deve_facebook.pdf), ed i risultati del esperimento:
+  * [Facebook profit ](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-profit.html)
+  * [Facebook value calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-value-calculator.html)
+  * [Instagram money calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/instagram-money-calculator.html)
+  * [Quanto ci deve Facebook](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/quanto_ci_deve_facebook.html)
+
 ### Domenica 10 Maggio 2026, presso la redazione di **Scomodo**, Via Jean Jaures, 22, Milano:
 
 {{<linked_image

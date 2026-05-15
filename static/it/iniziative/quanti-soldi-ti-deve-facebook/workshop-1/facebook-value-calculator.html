@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quanto vale per Facebook?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #080808;
+    --surface: #111111;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.15);
+    --text: #f0ede8;
+    --muted: rgba(240,237,232,0.45);
+    --faint: rgba(240,237,232,0.12);
+    --accent: #e8d5a3;
+    --accent-dim: rgba(232,213,163,0.15);
+    --accent-glow: rgba(232,213,163,0.08);
+    --red: #c94f3a;
+    --red-dim: rgba(201,79,58,0.12);
+    --mono: 'DM Mono', monospace;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── noise overlay ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ── header ── */
+  .header {
+    padding: 72px 0 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
+    opacity: 0.3;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(36px, 7vw, 68px);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: var(--muted);
+    max-width: 480px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── form section ── */
+  .form-section {
+    padding: 48px 0 0;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+
+  .field {
+    padding: 22px 24px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+    position: relative;
+  }
+
+  .field:nth-child(even) { border-right: none; }
+  .field:nth-last-child(-n+2) { border-bottom: none; }
+  .field:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2;
+    border-right: none;
+  }
+
+  .field:hover { background: var(--accent-glow); }
+
+  .field-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .field-hint {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+    font-family: var(--mono);
+  }
+
+  /* inputs */
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    background: var(--border-hover);
+    outline: none;
+    margin: 8px 0 4px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(232,213,163,0.4);
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="number"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-hover);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    outline: none;
+    padding: 4px 0;
+    transition: border-color 0.2s;
+  }
+
+  input[type="number"]:focus { border-bottom-color: var(--accent); }
+  input[type="number"]::-webkit-inner-spin-button { opacity: 0; }
+
+  select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-hover);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    width: 100%;
+    outline: none;
+    padding: 6px 0;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(240,237,232,0.4)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+    padding-right: 22px;
+    transition: border-color 0.2s;
+  }
+
+  select:focus { border-bottom-color: var(--accent); }
+
+  select option {
+    background: #1a1a1a;
+    color: var(--text);
+  }
+
+  .range-value {
+    font-family: var(--mono);
+    font-size: 22px;
+    color: var(--text);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* ── CTA button ── */
+  .cta-wrap {
+    padding: 36px 0 0;
+    text-align: center;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: #0a0804;
+    border: none;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: transform 0.15s, box-shadow 0.2s, opacity 0.15s;
+    box-shadow: 0 0 0 rgba(232,213,163,0);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 32px rgba(232,213,163,0.2);
+  }
+
+  .cta-btn:active { transform: scale(0.98); }
+
+  /* ── result panel ── */
+  #result-panel {
+    display: none;
+    padding: 56px 0 0;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  #result-panel.visible {
+    display: block;
+    animation: reveal 0.7s ease forwards;
+  }
+
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .result-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .result-divider::before, .result-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .total-block {
+    text-align: center;
+    padding: 48px 0 40px;
+    position: relative;
+  }
+
+  .total-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  .total-amount {
+    font-family: var(--serif);
+    font-size: clamp(56px, 12vw, 110px);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    display: block;
+    text-shadow: 0 0 80px rgba(232,213,163,0.15);
+  }
+
+  .total-caption {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+    font-family: var(--serif);
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── breakdown cards ── */
+  .breakdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    margin: 40px 0;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .breakdown-card {
+    background: var(--surface);
+    padding: 22px 20px;
+    text-align: center;
+  }
+
+  .breakdown-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .breakdown-value {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .breakdown-pct {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--faint);
+    margin-top: 4px;
+  }
+
+  /* ── bar chart ── */
+  .chart-section {
+    margin: 0 0 40px;
+  }
+
+  .chart-title {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  .chart-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .chart-row-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 2px;
+    background: var(--border);
+    border-radius: 1px;
+    position: relative;
+    overflow: visible;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 1px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 0%;
+    position: relative;
+  }
+
+  .bar-fill::after {
+    content: '';
+    position: absolute;
+    right: -1px; top: -3px;
+    width: 8px; height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(232,213,163,0.6);
+  }
+
+  .bar-amount {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    width: 70px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  /* ── comparison ── */
+  .comparison {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin: 0 0 40px;
+    background: var(--accent-glow);
+    border-radius: 1px;
+  }
+
+  .comparison-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .comparison-text {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  /* ── share button ── */
+  .share-wrap {
+    text-align: center;
+    padding: 8px 0 0;
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--border-hover);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    text-decoration: none;
+  }
+
+  .share-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-glow);
+  }
+
+  /* ── footer ── */
+  footer {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--faint);
+    line-height: 1.8;
+  }
+
+  /* ── mobile ── */
+  @media (max-width: 560px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .field:nth-child(even) { border-right: none; }
+    .field:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+    .field:last-child { border-bottom: none; }
+    .field:nth-last-child(1):nth-child(odd) { grid-column: span 1; }
+    .breakdown { grid-template-columns: 1fr; }
+    .chart-row-label { width: 80px; font-size: 9px; }
+  }
+
+  /* ── pulse animation on amount ── */
+  @keyframes pulse-glow {
+    0%, 100% { text-shadow: 0 0 80px rgba(232,213,163,0.1); }
+    50%       { text-shadow: 0 0 120px rgba(232,213,163,0.3); }
+  }
+
+  .total-amount.glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="eyebrow">Indagine sui dati personali</div>
+    <h1>Quanto hai<br>guadagnato per<br><em>Facebook?</em></h1>
+    <p class="subtitle">
+      Meta non ti paga. Eppure ogni like, ogni post, ogni ora trascorsa sulla piattaforma genera denaro reale. Scopri quanto.
+    </p>
+  </header>
+
+  <!-- FORM -->
+  <section class="form-section" aria-label="Inserisci i tuoi dati di utilizzo">
+    <div class="form-grid">
+
+      <div class="field">
+        <label class="field-label" for="years">Anni su Facebook</label>
+        <span class="range-value" id="years-val">7</span>
+        <input type="range" id="years" min="1" max="20" value="7" step="1"
+          oninput="document.getElementById('years-val').textContent=this.value; recalc()">
+        <div class="field-hint">1 — 20 anni</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="friends">Amici / connessioni</label>
+        <input type="number" id="friends" value="250" min="1" max="5000"
+          oninput="recalc()" aria-label="Numero di amici">
+        <div class="field-hint">La rete aumenta il tuo valore</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="posts">Post al mese</label>
+        <span class="range-value" id="posts-val">8</span>
+        <input type="range" id="posts" min="0" max="100" value="8" step="1"
+          oninput="document.getElementById('posts-val').textContent=this.value; recalc()">
+        <div class="field-hint">0 — 100 post</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="hours">Ore al giorno</label>
+        <span class="range-value" id="hours-val">1.5</span>
+        <input type="range" id="hours" min="0" max="8" value="1.5" step="0.5"
+          oninput="document.getElementById('hours-val').textContent=parseFloat(this.value).toFixed(1); recalc()">
+        <div class="field-hint">0 — 8 ore</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="location">Area geografica</label>
+        <select id="location" onchange="recalc()">
+          <option value="68">Tier 1 — USA, UK, AU, CA</option>
+          <option value="28" selected>Tier 2 — EU, Brasile, Giappone</option>
+          <option value="12">Tier 3 — Resto del mondo</option>
+        </select>
+        <div class="field-hint">Influenza il CPM pubblicitario</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="age">Fascia d'età</label>
+        <select id="age" onchange="recalc()">
+          <option value="0.5">13–17 anni</option>
+          <option value="1.1">18–24 anni</option>
+          <option value="1.3" selected>25–34 anni</option>
+          <option value="1.2">35–44 anni</option>
+          <option value="1.0">45–54 anni</option>
+          <option value="0.85">55+ anni</option>
+        </select>
+        <div class="field-hint">Gli inserzionisti pagano di più per certi target</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="device">Dispositivo principale</label>
+        <select id="device" onchange="recalc()">
+          <option value="1.15">iPhone</option>
+          <option value="1.0" selected>Android</option>
+          <option value="0.9">Desktop / PC</option>
+        </select>
+        <div class="field-hint">iOS vale di più sul mercato pubblicitario</div>
+      </div>
+
+    </div>
+
+    <div class="cta-wrap">
+      <button class="cta-btn" onclick="showResult()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M5 7h4M7 5l2 2-2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Calcola il tuo valore
+      </button>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result-panel" aria-live="polite" aria-label="Risultato del calcolo">
+
+    <div class="result-divider">Risultato</div>
+
+    <div class="total-block">
+      <div class="total-label">Ricavi stimati generati per Meta</div>
+      <span class="total-amount glow" id="total-display">$0.00</span>
+      <p class="total-caption">
+        "È una stima di quanto Meta ha guadagnato dalla tua presenza sulla piattaforma."
+      </p>
+    </div>
+
+    <!-- BREAKDOWN CARDS -->
+    <div class="breakdown">
+      <div class="breakdown-card">
+        <span class="breakdown-label">Pubblicità</span>
+        <div class="breakdown-value" id="bd-ads">$0</div>
+        <div class="breakdown-pct">75% del totale</div>
+      </div>
+      <div class="breakdown-card">
+        <span class="breakdown-label">Valore dei dati</span>
+        <div class="breakdown-value" id="bd-data">$0</div>
+        <div class="breakdown-pct">18% del totale</div>
+      </div>
+      <div class="breakdown-card">
+        <span class="breakdown-label">Profilo comportamentale</span>
+        <div class="breakdown-value" id="bd-behav">$0</div>
+        <div class="breakdown-pct">7% del totale</div>
+      </div>
+    </div>
+
+    <!-- BAR CHART -->
+    <div class="chart-section">
+      <div class="chart-title">Dettaglio per anno</div>
+      <div id="bars-container"></div>
+    </div>
+
+    <!-- COMPARISON -->
+    <div class="comparison">
+      <div class="comparison-label">In prospettiva</div>
+      <div class="comparison-text" id="comparison-text">—</div>
+    </div>
+
+    <!-- SHARE -->
+    <div class="share-wrap">
+      <a id="share-link" class="share-btn" href="#" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Condividi il tuo numero
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Tutte le cifre sono stime basate sull'ARPU medio riportato da Meta nelle trimestrali pubbliche e su ricerche indipendenti sul valore dei dati degli utenti. I moltiplicatori per età, dispositivo e area geografica riflettono differenziali di mercato pubblicitario documentati. Questo strumento non è affiliato a Meta Platforms Inc.</p>
+  </footer>
+
+</div>
+
+<script>
+  function getValues() {
+    return {
+      years:   parseInt(document.getElementById('years').value),
+      friends: parseInt(document.getElementById('friends').value) || 0,
+      posts:   parseInt(document.getElementById('posts').value),
+      hours:   parseFloat(document.getElementById('hours').value),
+      arpu:    parseFloat(document.getElementById('location').value),
+      ageMult: parseFloat(document.getElementById('age').value),
+      devMult: parseFloat(document.getElementById('device').value),
+    };
+  }
+
+  function calculate() {
+    const v = getValues();
+    const engMult    = (v.posts / 8) * (v.hours / 1.5);
+    const netMult    = Math.log10(Math.max(v.friends, 1) + 1) / Math.log10(251);
+    const total      = v.arpu * v.years * Math.max(engMult, 0.05) * Math.max(netMult, 0.05) * v.ageMult * v.devMult;
+    return Math.max(total, 0.5);
+  }
+
+  function recalc() {
+    if (document.getElementById('result-panel').classList.contains('visible')) {
+      updateResult(calculate(), false);
+    }
+  }
+
+  function fmt(n) {
+    return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function fmtShort(n) {
+    if (n >= 1000) return '$' + (n / 1000).toFixed(1) + 'k';
+    return '$' + Math.round(n);
+  }
+
+  function getComparison(total) {
+    if (total < 300)   return `Equivale circa al costo di un volo low-cost andata e ritorno in Europa.`;
+    if (total < 800)   return `È il prezzo di uno smartphone di fascia alta, come un iPhone di ultima generazione.`;
+    if (total < 2000)  return `Coprirebbe un mese d'affitto medio in una capitale europea come Lisbona o Budapest.`;
+    if (total < 5000)  return `Con questa cifra potresti comprare un'auto usata in buone condizioni.`;
+    if (total < 12000) return `È abbastanza per finanziare un anno di università in molti paesi europei.`;
+    return `Con questa cifra potresti pagarti un master universitario completo.`;
+  }
+
+  function animateCounter(el, target, duration) {
+    const start = Date.now();
+    const startVal = parseFloat(el.dataset.current || 0);
+    function step() {
+      const p = Math.min((Date.now() - start) / duration, 1);
+      const ease = p < 0.5 ? 2*p*p : -1+(4-2*p)*p;
+      const cur = startVal + (target - startVal) * ease;
+      el.textContent = fmt(cur);
+      if (p < 1) requestAnimationFrame(step);
+      else { el.textContent = fmt(target); el.dataset.current = target; }
+    }
+    requestAnimationFrame(step);
+  }
+
+  function buildBars(total) {
+    const v = getValues();
+    const yearlyBase = total / v.years;
+    const container = document.getElementById('bars-container');
+    container.innerHTML = '';
+    const maxVal = yearlyBase * v.years;
+
+    for (let y = 1; y <= Math.min(v.years, 10); y++) {
+      const val = yearlyBase * y;
+      const pct = (val / maxVal) * 100;
+      const row = document.createElement('div');
+      row.className = 'chart-row';
+      row.innerHTML = `
+        <div class="chart-row-label">Anno ${y}</div>
+        <div class="bar-track"><div class="bar-fill" data-pct="${pct}"></div></div>
+        <div class="bar-amount">${fmtShort(val)}</div>
+      `;
+      container.appendChild(row);
+    }
+
+    if (v.years > 10) {
+      const more = document.createElement('div');
+      more.style.cssText = 'font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center;padding:8px 0;letter-spacing:0.1em;';
+      more.textContent = `+ altri ${v.years - 10} anni non mostrati`;
+      container.appendChild(more);
+    }
+
+    setTimeout(() => {
+      document.querySelectorAll('.bar-fill').forEach(b => {
+        b.style.width = b.dataset.pct + '%';
+      });
+    }, 80);
+  }
+
+  function updateResult(total, animate) {
+    const ads   = total * 0.75;
+    const data  = total * 0.18;
+    const behav = total * 0.07;
+
+    const totalEl = document.getElementById('total-display');
+    if (animate) {
+      animateCounter(totalEl, total, 1400);
+    } else {
+      totalEl.textContent = fmt(total);
+      totalEl.dataset.current = total;
+    }
+
+    document.getElementById('bd-ads').textContent   = fmtShort(ads);
+    document.getElementById('bd-data').textContent  = fmtShort(data);
+    document.getElementById('bd-behav').textContent = fmtShort(behav);
+    document.getElementById('comparison-text').textContent = getComparison(total);
+
+    const tweetText = encodeURIComponent(`Facebook ha guadagnato circa ${fmt(total)} grazie a me. Quanto ha guadagnato da te? Scoprilo →`);
+    document.getElementById('share-link').href = `https://twitter.com/intent/tweet?text=${tweetText}`;
+
+    buildBars(total);
+  }
+
+  function showResult() {
+    const total = calculate();
+    const panel = document.getElementById('result-panel');
+    panel.style.display = 'block';
+    panel.classList.add('visible');
+
+    updateResult(total, true);
+
+    setTimeout(() => {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+</script>
+
+</body>
+</html>
