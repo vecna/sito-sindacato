@@ -14,18 +14,20 @@ La grande trasformazione economica del XXI secolo consiste precisamente in quest
 
 ---
 
-# L'avvio del Sindacato durante il Festival di NINA
+{{< sezione sfondo="#c8f500" titolo="L'avvio del Sindacato durante il Festival di NINA" >}}
 
-Grazie per chi si è unita il [9 e 10 Maggio 2026](/it/eventi) per workshop, sperimentazioni e incontri.
+### Grazie a chi è unita il [9 e 10 Maggio 2026](https://nina.watch/festival.html) per workshop, sperimentazioni e incontri. Qui il materiale usato e prodotto:
 
 * l'applicazione [Ghòstati!](/ghostati)
 * La presentazione del Sindacato con [Risorse Veramente Umane](/it/eventi/presentazione-RVU-Festival-2026.html)
 * La presentazione di [Bonifacio VIII](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf)
-* La presentazione di [Quanti Soldi ti deve Facebook?](/pdf/festival-26/Quanti_soldi_ti_deve_facebook.pdf), ed i risultati del esperimento:
+* La presentazione di [Quanti Soldi ti deve Facebook?](/pdf/festival-26/Quanti_soldi_ti_deve_facebook.pdf), ed i risultati dell'esperimento:
   * [Facebook profit ](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-profit.html)
   * [Facebook value calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-value-calculator.html)
   * [Instagram money calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/instagram-money-calculator.html)
   * [Quanto ci deve Facebook](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/quanto_ci_deve_facebook.html)
+
+{{< /sezione >}}
 
 ## Necessità di un sindacato universale digitale
 
