@@ -500,7 +500,7 @@ header {
    ========================================================================== */
 
 .text-section {
-  padding: 5rem 8vw;
+  padding: 8%;
   background-color: var(--color-accent);
 }
 
