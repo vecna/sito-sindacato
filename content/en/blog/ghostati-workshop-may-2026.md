@@ -5,29 +5,37 @@ date: 2026-05-11
 tags: ["festival", "makeup", "ghostati", "self-defense"]
 ---
 
-During the festival of May 8, 9, and 10, 2026, we launched our first active experiments in visual self-defense. Guided by experts and activists, dozens of people gathered in Milan and Rome to test *adversarial makeup* techniques on their own faces and map the vulnerabilities of biometric surveillance algorithms[^1].
+During the festival of May 8, 9, and 10, 2026, we launched our first active experiments in visual self-defense. 
 
-### Saturday, May 9 — Milan (Rob de Matt)
-The first workshop took place in Milan in the beautiful setting of Rob de Matt. We experimented with altering facial keypoints by applying strategic asymmetrical patterns and color contrasts on the orbital and nasal areas.
+This blog post highlights the adversarial makeup workshops conducted with artist Michelle Tylicki during the NINA festival. The Italian post details the physical experiments in Milan and Rome where participants applied strategic, asymmetrical cosmetics to bypass local facial recognition systems and tested their effectiveness in real-time.
 
+While we intend to establish a Europe-wide network of biometric evasion training, our active live-testing experiments are currently operating on the ground in Milan and Rome.
+
+---
+
+### Italian Equivalent Resources & Links
+
+You can access the active application, visual models, and campaign links below:
+
+* **[Ghòstati! Web App](https://sindacato.nina.watch/ghostati)**: Interactive browser tool to test adversarial makeup via webcam.
+* **[Ghostati GitHub Repository](https://github.com/vecna/ghostati)**: Open-source repository containing the local recognition model code.
+* **[Reclaim Your Face Campaign](https://reclaimyourface.eu)**: The European biometric surveillance ban campaign.
+* **[Michelle Tylicki's Website](https://www.michelletylicki.info/)**: The expert makeup artist who co-led the physical workshops.
+
+---
+
+### Workshop Photos
+
+#### Saturday, May 9 — Milan (Rob de Matt)
 {{<linked_image
 	src="images/Evento Ghostati Milano Sabato.png"
 	href="https://supporta.nina.watch/milano"
 	alt="Adversarial makeup workshop Saturday afternoon at Rob de Matt, Milan"
 >}}
 
-### Sunday, May 10 — Rome (Millepiani)
-On Sunday, the workshop moved to Rome at Millepiani, joining forces with discussions on algorithmic labor. We tested the efficacy of the adversarial designs in real-time using our dedicated web app.
-
+#### Sunday, May 10 — Rome (Millepiani)
 {{<linked_image
 	src="images/Evento Ghostati Roma Domenica.png"
 	href="https://supporta.nina.watch/roma"
 	alt="Adversarial makeup workshop, Really Human Resources event on Sunday in Rome"
 >}}
-
-The web application [Ghòstati!](https://sindacato.nina.watch/ghostati) is now fully active and available for anyone to experiment with directly from their browser in total privacy[^2].
-
-We will soon publish a comprehensive report with data on the evasion rates of the different patterns tested during the workshops!
-
-[^1]: To learn more about the threats of mass biometric surveillance and the European campaign, see the European Citizens' Initiative [Reclaim Your Face](https://reclaimyourface.eu).
-[^2]: The application's code is entirely open source and auditable on the official repository [vecna/ghostati](https://github.com/vecna/ghostati).

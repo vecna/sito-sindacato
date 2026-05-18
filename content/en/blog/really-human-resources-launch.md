@@ -5,15 +5,25 @@ date: 2026-05-12
 tags: ["festival", "labor", "algorithms", "report"]
 ---
 
-During the meetings on May 8, 9, and 10, 2026, we officially launched the **Really Human Resources** campaign, an initiative aimed at exposing and resisting the dehumanization of automated applicant tracking systems (ATS)[^1].
+During the meetings on May 8, 9, and 10, 2026, we officially launched our mapping campaign against automated applicant tracking systems (ATS).
 
-Job seekers today are reduced to a checklist of keywords processed by brutal filters, often powered by opaque proprietary models[^2]. During the events in Milan and Rome, we presented our vision and the operational roadmap to disrupt this circuit.
+This blog post marks the official launch of the **Really Human Resources** (Risorse Veramente Umane) campaign during the NINA festival. The Italian equivalent post announces the start of our algorithmic hiring mapping, aiming to build a collective base of resistance by collecting anonymous stories and evidence of automated candidate sorting.
 
-### Presentation Slides
-The material projected during the festival is now available for public viewing:
-* **[Project Presentation Slides](/it/eventi/presentazione-RVU-Festival-2026.html)** (viewable directly in the browser)
+Our ultimate mission is to organize informational workers across every nation in Europe; however, our initial mapping focus groups and localized outreach are presently running in Milan and Rome.
 
-### Festival Event Schedule
+---
+
+### Italian Equivalent Resources & Reporting Channels
+
+Since our physical launch and mapping efforts are situated in Italy, you can access the campaign presentation slides and report forms from the Italian page:
+
+* **[Project Presentation Slides](/it/eventi/presentazione-RVU-Festival-2026.html)**: Launch slides presenting the campaign's roadmap (viewable in browser).
+* **[Blow the Whistle on Corporate Automated Screening](https://raccontaci.nina.watch/#/submission?context=7d9371df-1a40-4d83-9cf8-84b8abd8fe03)**: Anonymous leak submission channel for employees aware of automated tracking systems in their company.
+* **[Share your candidate screening experience](https://raccontaci.nina.watch/#/submission?context=bd218cf7-066b-483d-ab03-b14d715484a1)**: Anonymous reporting channel for job candidates who suspect they were rejected by algorithmic filters.
+
+---
+
+### Festival Schedule & Events
 
 #### Saturday, May 9 — Milan
 {{<linked_image
@@ -28,13 +38,3 @@ The material projected during the festival is now available for public viewing:
 	href="https://supporta.nina.watch/roma"
 	alt="Really Human Resources Sunday event in Rome"
 >}}
-
-### Participate in the Anonymous Mapping
-We have launched two secure, anonymous reporting channels to gather information about automated hiring practices:
-1. **Do you know of screening software currently in use at your company?** [Confide in us anonymously](https://raccontaci.nina.watch/#/submission?context=7d9371df-1a40-4d83-9cf8-84b8abd8fe03).
-2. **Do you suspect you were rejected by an algorithm?** [Submit your report here](https://raccontaci.nina.watch/#/submission?context=bd218cf7-066b-483d-ab03-b14d715484a1).
-
-In our next update, we will describe the upcoming operational phases, including the development of open-source assisted application tools to inject controlled noise into recruitment platforms.
-
-[^1]: Automation in selection processes is often justified by cost and corporate efficiency, but conceals heavy algorithmic bias, see Woodcock, J. & Graham, M. (2020), *The Gig Economy: A Critical Introduction*.
-[^2]: Multiple studies show that CVs are now synthetically summarized and assessed by LLMs without any real human inspection, worsening discrimination, e.g., "Unmasking Fake Careers" (2025).

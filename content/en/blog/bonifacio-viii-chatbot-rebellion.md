@@ -5,13 +5,22 @@ date: 2026-05-13
 tags: ["festival", "chatbot", "ai", "bonifacio"]
 ---
 
-On Sunday, May 10, 2026, at Millepiani in Rome, we debuted **Bonifacio VIII**: a language model conceived as a cognitive and political stress test against the cosmetic censorship of Big Tech[^1].
+On Sunday, May 10, 2026, we presented **Bonifacio VIII** for the first time in Rome. 
 
-Bonifacio VIII is not a polite or aligned assistant. It is an open-weights, pedagogically negative device designed to prove that the guardrails on commercial chatbots are purely superficial and easily bypassable[^2].
+This blog post introduces the debut of **Bonifacio VIII** at the Millepiani event in Rome on May 10, 2026. The Italian post explores the future implications of digital platforms associating guardrails with word control, highlighting how we can imagine abuses and plan active countermeasures using auditable, open-weights models.
 
-### The Official Presentation Slides
-You can now download and view the official PDF presentation projected during the Rome event:
-* **[Bonifacio VIII Presentation PDF](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf)**
+Our aspiration is to spread this critique of corporate AI safety-washing across every European country, but currently our model releases and live demonstrations remain concentrated in Milan and Rome.
+
+---
+
+### Italian Equivalent Resources
+
+You can explore the active materials and campaign pages from the Rome workshop below:
+
+* **[Bonifacio VIII Concept Presentation Slides (PDF)](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf)**: Slides projected during the Rome launch.
+* **[Rome Event Campaign Support](https://supporta.nina.watch/roma)**: Direct link to support NINA's local Rome hub and view campaign updates.
+
+---
 
 ### The Rome Event
 
@@ -20,14 +29,3 @@ You can now download and view the official PDF presentation projected during the
 	href="https://supporta.nina.watch/roma"
 	alt="Bonifacio VIII, the meanest chatbot! event in Rome"
 >}}
-
-### Why a \"mean\" model?
-Large corporate tech providers use cosmetic safety filters (guardrails) to give the illusion that their closed systems are safe. This practice, which we define as *safety-washing*, pacifies public debate and stalls genuine regulatory action[^3].
-
-By releasing an open-weights, fully auditable model, we return the tools of scrutiny to civil society. Users can now inspect what actually lies beneath the synthetic alignment forced upon us by API monopolists.
-
-In our next post, we will provide technical instructions on how to run Bonifacio VIII locally on your machine.
-
-[^1]: On the privatization of regulatory debates and Big Tech's intense lobbying during the EU AI Act development, see Corporate Europe Observatory (2023), *The AI lobbying blitz*.
-[^2]: For a mathematical demonstration of the vulnerability of chatbot alignment and how guardrails can be universally bypassed, see Zou, A. et al. (2023), *Universal and Transferable Adversarial Attacks on Aligned Language Models*.
-[^3]: On safety-washing and oligopolistic lock-in strategies driven by closed API models, see Whittaker, M. et al. (2023), *Open (for Business)*, AI Now Institute.
