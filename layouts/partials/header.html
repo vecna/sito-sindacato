@@ -3,6 +3,15 @@
     {{- $homeEntry := index .Site.Menus.main 0 -}}
     <a href="{{ $homeEntry.URL }}" class="nav-logo">{{ $homeEntry.Name }}</a>
 
+    {{- $logo := resources.Get "images/nina-logo.png" -}}
+    <a href="https://nina.watch" class="nav-middle-logo" target="_blank" rel="noopener noreferrer">
+      {{- if $logo -}}
+        <img src="{{ $logo.RelPermalink }}" alt="NINA Logo">
+      {{- else -}}
+        NINA
+      {{- end -}}
+    </a>
+
     <div class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </div>

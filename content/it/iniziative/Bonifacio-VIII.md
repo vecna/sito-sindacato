@@ -16,16 +16,6 @@ Vogliamo fornire agli attivisti, ai ricercatori e alla società civile uno stres
 
 {{< /sezione >}}
 
-### L'evento di lancio
-
-Millepiani - Via nicolo odero 13, Roma
-
-{{<linked_image
-	src="images/Evento Bonifacio VIII Domenica Roma.png"
-	href="https://supporta.nina.watch/roma"
-	alt="Evento Bonifacio VIII, il chatbot più cattivo! a Milano"
->}}
-
 ## Il Problema teorico
 
 Oggi assistiamo a una pericolosa privatizzazione della sicurezza digitale. I dibattiti regolatori, in particolare attorno all'AI Act europeo, sono stati pesantemente condizionati dal lobbismo delle Big Tech[^1], portando i legislatori a scambiare le promesse di "allineamento" aziendale per vere politiche pubbliche. La sicurezza delegata ai grandi fornitori è, in realtà, una finzione: si tratta di *safety-washing* commerciale che produce un effetto meramente estetico[^2]. Se un sistema mainstream rifiuta una richiesta controversa (i cosiddetti "guardrail"), si diffonde l'idea che il problema sia stato risolto. Al contrario, la ricerca dimostra che questi filtri sono trivialmente eludibili tramite tecniche di *jailbreaking* e attacchi avversariali[^3]. Questa dinamica genera un'anestesia politica: rassicura l'utente e deresponsabilizza chi governa, creando una realtà digitale a due corsie dove il danno reale continua a operare nel buio della dipendenza da API proprietarie.

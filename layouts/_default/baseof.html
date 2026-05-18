@@ -18,7 +18,7 @@
   {{ $css := resources.Get "css/main.css" | minify }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
-<body>
+<body class="{{ with .Section }}section-{{ . }}{{ end }}{{ if .IsHome }} page-home{{ end }}">
   {{- partial "header.html" . -}}
 
   <main class="page-offset">

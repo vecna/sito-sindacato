@@ -9,8 +9,6 @@
   weight = 2
 
 [[main]]
-  name = "chi? NINA"
-  url = "https://nina.watch"
+  name = "Ultime"
+  pageRef = "/blog/"
   weight = 3
-  [[main.params]]
-    rel = 'external'

@@ -1,0 +1,54 @@
+{{ define "main" }}
+<article class="page-content blog-list-page">
+  <div class="content-body-wide">
+    <div class="label">{{ if eq .Language.Lang "it" }}Archivio Ultime{{ else }}Updates Archive{{ end }}</div>
+    <h1>{{ .Title }}</h1>
+    
+    {{ if .Content }}
+    <div class="blog-intro">
+      {{ .Content }}
+    </div>
+    {{ end }}
+
+    <div class="blog-archive">
+      {{ range .Pages.GroupByDate "2006-01" }}
+        {{ $firstPage := index .Pages 0 }}
+        <h2 class="archive-month-header">{{ $firstPage.Date | time.Format "January 2006" }}</h2>
+        <div class="archive-posts-list">
+          {{ range .Pages }}
+          <div class="archive-post-item">
+            <div class="archive-post-meta">
+              <time class="archive-post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "02 Jan" }}</time>
+              {{ with .Params.tags }}
+              <span class="archive-post-tags">
+                {{ range . }}
+                <span class="archive-tag">#{{ . }}</span>
+                {{ end }}
+              </span>
+              {{ end }}
+            </div>
+            
+            <div class="archive-post-main">
+              <h3 class="archive-post-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+              {{ with .Params.subtitle }}
+              <p class="archive-post-subtitle">{{ . }}</p>
+              {{ end }}
+            </div>
+            
+            <div class="archive-post-reading">
+              {{ if eq .Language.Lang "it" }}
+                {{ .ReadingTime }} min
+              {{ else }}
+                {{ .ReadingTime }} min read
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
