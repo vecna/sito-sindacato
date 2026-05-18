@@ -21,7 +21,7 @@ La grande trasformazione economica del XXI secolo consiste precisamente in quest
 * l'applicazione [Ghòstati!](/ghostati)
 * La presentazione del Sindacato con [Risorse Veramente Umane](/it/eventi/presentazione-RVU-Festival-2026.html)
 * La presentazione di [Bonifacio VIII](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf) (pdf)
-* La presentazione di [Quanti Soldi ti deve Facebook?](/pdf/festival-26/Quanti_soldi_ci_deve_facebook.pdf) (pdf), e i risultati dell'esperimento:
+* La presentazione di [Quanti Soldi ci deve Facebook?](/pdf/festival-26/Quanti_soldi_ci_deve_facebook.pdf) (pdf), e i risultati dell'esperimento:
   * [Facebook profit ](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-profit.html)
   * [Facebook value calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-value-calculator.html)
   * [Instagram money calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/instagram-money-calculator.html)

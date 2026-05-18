@@ -35,7 +35,7 @@ I trucchi di successo possono essere condivisi come immagini a chi vuoi tu, o pr
 
 Non possiamo sapere con precisione se questi sistemi funzionano su tutte le tecnologie di riconoscimento facciale. Con la convinzione che chi lavora in quel settore e con quegli strumenti non per forza sposi la causa della sorveglianza indiscriminata, [abbiamo aperto questo canale anonimo di raccolta informazioni](https://raccontaci.nina.watch/#/submission?context=10c78596-3ea0-4867-b2fb-21fdb8e3f40c):
 
-{{< sezione sfondo="#c8f500" titolo="Porta luce sulla segretezza" >}}
+{{< sezione sfondo="#c8f500" titolo="Facciamo luce sulla segretezza" >}}
 
 ### Il riconoscimento facciale negli spazi pubblici è vietato
 
