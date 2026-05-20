@@ -328,7 +328,7 @@ header {
 .page-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 8vw;
+  padding: 4rem 8%;
 }
 
 /* Wider layout for list pages (no sidenote margin needed) */
