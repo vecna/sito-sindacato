@@ -9,6 +9,6 @@
   weight = 2
 
 [[main]]
-  name = "Ultime"
+  name = "Ultime/blog"
   pageRef = "/blog/"
   weight = 3
