@@ -40,39 +40,18 @@ Noi riteniamo sia illecito, disumanizzante, e ingiusto. Raccogliere testimonanze
 
 {{< /sezione >}}
 
-
-## Gli eventi di lancio
-
-### Milano, 9 Maggio 2026
-
-{{<linked_image
-	src="images/Evento RHR Sabato Milano.png"
-	href="https://supporta.nina.watch/milano"
-	alt="Evento Really Human Resources di sabato a Milano"
->}}
-
-### Roma, 10 Maggio 2026
-
-{{<linked_image
-	src="images/Evento RHR Domenica Roma.png"
-	href="https://supporta.nina.watch/roma"
-	alt="Evento Really Human Resources di domenica a Roma"
->}}
+Le [slide di presentazione](/it/eventi/presentazione-RVU-Festival-2026.html) usate al lancio.
 
 ## La sequenza operativa
 
-Vari componenti ci sono in gioco, segui questa pagina per vedere come stanno procedendo. Considerando la natura open source e decentralizzata dello sforzo, considera la partecipazione:
+Vari percorsi devono avviarsi e funzionare in parallelo,.
+Considerando la natura open source e decentralizzata dello sforzo, se vuoi partecipare, questo è più o meno il piano che abbiamo in mente:
 
 1. **Piattaforma di leaking** con anonimato forte per far emergere regole interne, metriche e procedure. **Questo è il primo passo: la mappatura del fenomeno**.
-    
 2. **Cartografia dei filtri** per capire dove si produce lo scarto automatico: i software usati dalle aziende, i portali ed i loro filtri. Saper dare un nome al problema - non abbiamo ancora mappato questa situazione.
-    
 3. **Strumenti aperti di candidatura assistita** costruiti con sviluppatori e persone in cerca di lavoro: riducono il costo della candidatura e permettono di misurare il processo. Effetto collaterale politico: rompere la fiducia nei numeri.
-    
 4. **Bollettino settimanale** di osservazione dello stress, seriale e pubblico: quante candidatura abbiamo supportato?
-    
 5. **Misurazione e pubblicazione**: tempi di risposta, tassi di rimbalzo, annunci chiusi in anticipo, richieste invasive, incoerenze. Per questo serve assistere il lavoro di candidatura dall’inizio alla fine, oppure ricevere resoconti da chi passa per il processo.
-    
 6. **Escalation dove possibile**: interlocuzioni con sindacati e, nei casi più spinti, azioni collettive legate a decisioni automatizzate. Come suggerito sopra, sappiamo che un cittadino non dovrebbe subire scelte che impattano la sua vita in modo automatizzato, ma i diritti vanno conquistati, non basta che siano scritti sul regolamento protezione dati personali quando poi la tecnologia e la prassi vanno in altre direzioni.
 
 ## E se arrivamo qui? 

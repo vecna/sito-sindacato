@@ -2,7 +2,7 @@
 title: "Guida allo Stile"
 subtitle: "Tutti gli elementi del design system in una sola pagina"
 date: 2026-04-30
-draft: true
+draft: false
 weight: 99
 ---
 

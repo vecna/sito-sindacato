@@ -18,7 +18,7 @@ Ma in alcuni casi i posti limitati, quindi considera la registrazione.
 
 - **[Risorse Veramente Umane](/it/iniziative/risorse-veramente-umane)**  
   *Incontro sulle pratiche di selezione automatizzata del personale.*  
-  [Segui l'evento a Milano](https://supporta.nina.watch/milano)
+  [Segui l'evento a Milano](https://supporta.nina.watch/milano), queste le slide di [Presentazione](/it/eventi/presentazione-RVU-Festival-2026.html).
 
 ---
 

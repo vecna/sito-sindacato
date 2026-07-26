@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="page-content sidenote-layout blog-post-page">
+  <div class="content-body">
+    <div class="label">{{ if eq .Language.Lang "it" }}Ultime{{ else }}Latest{{ end }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="initiative-subtitle">{{ . }}</p>{{ end }}
+    
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date | time.Format "2 January 2006" }}
+      </time>
+      <span class="meta-separator">&bull;</span>
+      <span class="reading-time">
+        {{ if eq .Language.Lang "it" }}
+          {{ .ReadingTime }} min di lettura
+        {{ else }}
+          {{ .ReadingTime }} min read
+        {{ end }}
+      </span>
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}
+        <span class="post-tag">#{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    <hr class="post-nav-divider">
+    
+    <nav class="post-navigation">
+      <div class="nav-prev">
+        {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="nav-link-box">
+          <span class="nav-direction">&larr; {{ if eq $.Language.Lang "it" }}Precedente{{ else }}Previous{{ end }}</span>
+          <span class="nav-title">{{ .Title }}</span>
+        </a>
+        {{ end }}
+      </div>
+      <div class="nav-next">
+        {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="nav-link-box">
+          <span class="nav-direction">{{ if eq $.Language.Lang "it" }}Successivo{{ else }}Next{{ end }} &rarr;</span>
+          <span class="nav-title">{{ .Title }}</span>
+        </a>
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</article>
+{{ end }}

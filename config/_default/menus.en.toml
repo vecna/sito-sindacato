@@ -7,3 +7,8 @@
   name = "Initiatives"
   pageRef = "/initiatives/"
   weight = 2
+
+[[main]]
+  name = "Latest"
+  pageRef = "/blog/"
+  weight = 3

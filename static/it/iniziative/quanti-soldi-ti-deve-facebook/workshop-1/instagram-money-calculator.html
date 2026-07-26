@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram ti ha fregato — Calcolatore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ig-orange: #F77737;
+    --ig-pink: #E1306C;
+    --ig-purple: #833AB4;
+    --ig-blue: #405DE6;
+    --lime: #C8F135;
+    --bg: #0D0D0D;
+    --card: #161616;
+    --border: rgba(255,255,255,0.08);
+    --text: #F5F5F0;
+    --muted: #888;
+    --radius: 16px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Syne', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 200px;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Gradient blob background */
+  .blob-bg {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .blob-bg span {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.12;
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+  .blob-bg span:nth-child(1) { width: 600px; height: 600px; background: var(--ig-purple); top: -200px; left: -100px; animation-delay: 0s; }
+  .blob-bg span:nth-child(2) { width: 500px; height: 500px; background: var(--ig-pink); bottom: -150px; right: -50px; animation-delay: -6s; }
+  .blob-bg span:nth-child(3) { width: 400px; height: 400px; background: var(--ig-orange); top: 40%; left: 50%; animation-delay: -12s; }
+
+  @keyframes drift {
+    from { transform: translate(0, 0) scale(1); }
+    to { transform: translate(30px, -40px) scale(1.08); }
+  }
+
+  /* Layout */
+  .page { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 3.5rem; }
+  .ig-logo {
+    display: inline-flex;
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, var(--ig-orange), var(--ig-pink), var(--ig-purple));
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 40px rgba(225,48,108,0.4);
+  }
+  .ig-logo svg { width: 28px; height: 28px; fill: white; }
+  .header h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+  }
+  .header h1 em {
+    font-style: normal;
+    background: linear-gradient(90deg, var(--ig-orange), var(--ig-pink), var(--ig-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header p {
+    font-size: 1rem;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+  }
+
+  /* Form card */
+  .form-card {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  @media (max-width: 520px) { .form-grid { grid-template-columns: 1fr; } }
+
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field.full { grid-column: 1 / -1; }
+
+  label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  label .req { color: var(--ig-pink); margin-left: 2px; }
+
+  input[type="number"], input[type="text"] {
+    background: rgba(255,255,255,0.04);
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: 'DM Mono', monospace;
+    color: var(--text);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+  input[type="number"]:focus {
+    border-color: var(--ig-pink);
+    box-shadow: 0 0 0 3px rgba(225,48,108,0.15);
+  }
+  input.error { border-color: #ff4444; }
+
+  /* Toggle */
+  .toggle-group {
+    display: flex;
+    gap: 8px;
+  }
+  .toggle-group input[type="radio"] { display: none; }
+  .toggle-group label {
+    flex: 1;
+    text-align: center;
+    padding: 11px;
+    border-radius: 10px;
+    border: 0.5px solid var(--border);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: var(--muted);
+    transition: all 0.2s;
+    background: rgba(255,255,255,0.03);
+  }
+  .toggle-group input[type="radio"]:checked + label {
+    background: linear-gradient(135deg, var(--ig-pink), var(--ig-purple));
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 20px rgba(131,58,180,0.35);
+  }
+
+  /* Section separator */
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ig-orange);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title::after { content: ''; flex: 1; height: 0.5px; background: var(--border); }
+
+  /* CTA button */
+  .cta-wrap { text-align: center; margin-top: 0.5rem; }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 40px;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--ig-orange) 0%, var(--ig-pink) 50%, var(--ig-purple) 100%);
+    color: white;
+    box-shadow: 0 8px 32px rgba(225,48,108,0.4);
+    transition: transform 0.15s, box-shadow 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0);
+    transition: background 0.15s;
+  }
+  .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(225,48,108,0.5); }
+  .cta-btn:hover::before { background: rgba(255,255,255,0.08); }
+  .cta-btn:active { transform: scale(0.98); }
+  .cta-btn svg { width: 18px; height: 18px; fill: white; }
+
+  /* Error msg */
+  .err-banner {
+    display: none;
+    background: rgba(255, 68, 68, 0.1);
+    border: 0.5px solid rgba(255,68,68,0.3);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #ff8080;
+    margin-top: 1rem;
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* Result section */
+  #result-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1);
+    pointer-events: none;
+  }
+  #result-section.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+
+  .result-hero {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .result-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(225,48,108,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .result-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .result-amount {
+    font-size: clamp(3.5rem, 12vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--ig-orange), var(--ig-pink), var(--ig-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.25rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .result-headline {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  .result-tagline {
+    font-size: 14px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-style: italic;
+  }
+
+  /* Breakdown cards */
+  .breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 480px) { .breakdown-grid { grid-template-columns: 1fr; } }
+
+  .breakdown-card {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .breakdown-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .breakdown-card.c1::before { background: linear-gradient(90deg, var(--ig-orange), var(--ig-pink)); }
+  .breakdown-card.c2::before { background: linear-gradient(90deg, var(--ig-pink), var(--ig-purple)); }
+  .breakdown-card.c3::before { background: linear-gradient(90deg, var(--ig-purple), var(--ig-blue)); }
+
+  .bc-icon { font-size: 22px; margin-bottom: 8px; }
+  .bc-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .bc-value { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); font-family: 'DM Mono', monospace; }
+
+  /* Share button */
+  .share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 0.5px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+  }
+  .share-btn:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.25); }
+  .share-btn.done { color: var(--lime); border-color: rgba(200,241,53,0.3); }
+
+  /* Recalculate */
+  .recalc-btn {
+    display: block;
+    margin: 1rem auto 0;
+    background: none;
+    border: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.15s;
+  }
+  .recalc-btn:hover { color: var(--text); }
+
+  /* Animate fields on load */
+  .form-card { animation: fadeUp 0.6s ease both; }
+  .header { animation: fadeUp 0.5s ease both; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* counter animation */
+  @keyframes countPulse {
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  .pulse { animation: countPulse 0.2s ease; }
+</style>
+</head>
+<body>
+
+<div class="blob-bg">
+  <span></span><span></span><span></span>
+</div>
+
+<div class="page">
+
+  <header class="header">
+    <div class="ig-logo">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    </div>
+    <h1>Quanto ha guadagnato<br>Instagram <em>da te</em>?</h1>
+    <p>// Inserisci i tuoi dati e scopri la verità</p>
+  </header>
+
+  <div class="form-card">
+    <div class="section-title">Il tuo profilo</div>
+    <div class="form-grid">
+      <div class="field">
+        <label>Anni su Instagram <span class="req">*</span></label>
+        <input type="number" id="years" min="1" max="20" placeholder="es. 5">
+      </div>
+      <div class="field">
+        <label>Ore al giorno <span class="req">*</span></label>
+        <input type="number" id="hours" min="0.5" max="16" step="0.5" placeholder="es. 1.5">
+      </div>
+      <div class="field">
+        <label>Post al mese <span class="req">*</span></label>
+        <input type="number" id="posts" min="0" placeholder="es. 10">
+      </div>
+      <div class="field">
+        <label>Stories al mese <span class="req">*</span></label>
+        <input type="number" id="stories" min="0" placeholder="es. 30">
+      </div>
+      <div class="field">
+        <label>Reel visti al giorno <span class="req">*</span></label>
+        <input type="number" id="reels" min="0" placeholder="es. 20">
+      </div>
+      <div class="field">
+        <label>Numero di follower <span class="req">*</span></label>
+        <input type="number" id="followers" min="0" placeholder="es. 350">
+      </div>
+      <div class="field">
+        <label>Account che segui <span class="req">*</span></label>
+        <input type="number" id="following" min="0" placeholder="es. 500">
+      </div>
+    </div>
+
+    <div style="margin-top: 1.25rem;">
+      <div class="section-title" style="margin-top: 1.5rem;">Comportamento pubblicitario</div>
+      <div class="field">
+        <label>Hai mai cliccato su un annuncio? <span class="req">*</span></label>
+        <div class="toggle-group">
+          <input type="radio" name="ad" id="ad-yes" value="yes">
+          <label for="ad-yes">👆 Sì, qualche volta</label>
+          <input type="radio" name="ad" id="ad-no" value="no">
+          <label for="ad-no">🙅 Mai nella vita</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-wrap" style="margin-top: 2rem;">
+      <button class="cta-btn" onclick="calculate()">
+        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>
+        Calcola quanto vale la mia vita
+      </button>
+      <div class="err-banner" id="err-banner">⚠ Compila tutti i campi obbligatori e seleziona un'opzione per gli annunci.</div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="result-section">
+    <div class="result-hero">
+      <div class="result-label">Instagram ha guadagnato da te</div>
+      <div class="result-amount" id="result-amount">$0</div>
+      <div class="result-headline" id="result-headline"></div>
+      <div class="result-tagline" id="result-tagline"></div>
+    </div>
+
+    <div class="breakdown-grid">
+      <div class="breakdown-card c1">
+        <div class="bc-icon">📸</div>
+        <div class="bc-label">Contenuti</div>
+        <div class="bc-value" id="bc-content">$0</div>
+      </div>
+      <div class="breakdown-card c2">
+        <div class="bc-icon">🎯</div>
+        <div class="bc-label">Pubblicità</div>
+        <div class="bc-value" id="bc-ads">$0</div>
+      </div>
+      <div class="breakdown-card c3">
+        <div class="bc-icon">🔗</div>
+        <div class="bc-label">Dati & Grafo</div>
+        <div class="bc-value" id="bc-data">$0</div>
+      </div>
+    </div>
+
+    <button class="share-btn" id="share-btn" onclick="shareResult()">
+      📋 &nbsp;Copia il risultato da condividere
+    </button>
+    <button class="recalc-btn" onclick="recalculate()">← Ricalcola</button>
+  </div>
+
+</div>
+
+<script>
+  let finalTotal = 0, finalYears = 0;
+
+  function validate() {
+    const ids = ['years','hours','posts','stories','reels','followers','following'];
+    let ok = true;
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      const val = parseFloat(el.value);
+      if (el.value === '' || isNaN(val) || val < 0) {
+        el.classList.add('error');
+        ok = false;
+      } else {
+        el.classList.remove('error');
+      }
+    });
+    const ad = document.querySelector('input[name="ad"]:checked');
+    if (!ad) ok = false;
+    return ok;
+  }
+
+  function calculate() {
+    const err = document.getElementById('err-banner');
+    if (!validate()) {
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none';
+
+    const years    = parseFloat(document.getElementById('years').value);
+    const hours    = parseFloat(document.getElementById('hours').value);
+    const posts    = parseFloat(document.getElementById('posts').value);
+    const stories  = parseFloat(document.getElementById('stories').value);
+    const reels    = parseFloat(document.getElementById('reels').value);
+    const followers= parseFloat(document.getElementById('followers').value);
+    const following= parseFloat(document.getElementById('following').value);
+    const adClick  = document.querySelector('input[name="ad"]:checked').value === 'yes';
+
+    const ARPU = 30;
+    const engagementWeight = (hours / 1) * 1.2;
+    const contentValue = posts * 12 * years * 0.008;
+    const storyValue   = stories * 12 * years * 0.003;
+    const reelValue    = reels * 365 * years * 0.004;
+    const socialGraph  = followers * 0.05;
+    const interestGraph= following * 0.02;
+    const adRevenue    = (ARPU * years * engagementWeight) + reelValue;
+    const dataValue    = socialGraph + interestGraph;
+
+    let total = adRevenue + contentValue + storyValue + dataValue;
+    if (adClick) total *= 1.35;
+
+    total = Math.round(total);
+    finalTotal = total;
+    finalYears = years;
+
+    const adBreakdown = Math.round(adRevenue * (adClick ? 1.35 : 1));
+    const contentBreakdown = Math.round((contentValue + storyValue) * (adClick ? 1.35 : 1));
+    const dataBreakdown = Math.round(dataValue * (adClick ? 1.35 : 1));
+
+    document.getElementById('bc-content').textContent = '$' + contentBreakdown.toLocaleString('it-IT');
+    document.getElementById('bc-ads').textContent = '$' + adBreakdown.toLocaleString('it-IT');
+    document.getElementById('bc-data').textContent = '$' + dataBreakdown.toLocaleString('it-IT');
+
+    let headline, tagline;
+    if (total < 300) {
+      headline = 'Sei un utente passivo... ma non innocente.';
+      tagline = '// Ti usano lo stesso, solo in modo più silenzioso.';
+    } else if (total < 800) {
+      headline = 'Sei un utente medio. Benvenuto nella macchina.';
+      tagline = '// Il tuo feed ha finanziato qualche server in Oregon.';
+    } else if (total < 2000) {
+      headline = 'Sei praticamente un piccolo media outlet per loro.';
+      tagline = '// Hai generato abbastanza da pagare uno stipendio di 2 mesi.';
+    } else if (total < 5000) {
+      headline = 'Congratulazioni: hai finanziato un ingegnere Meta.';
+      tagline = '// E lui non sa nemmeno chi sei. Bellissimo.';
+    } else {
+      headline = 'Sei una risorsa strategica di Instagram. Senza saperlo.';
+      tagline = '// Con questi soldi potevi comprare un\'auto usata.';
+    }
+
+    document.getElementById('result-headline').textContent = headline;
+    document.getElementById('result-tagline').textContent = tagline;
+
+    const section = document.getElementById('result-section');
+    section.classList.add('visible');
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    animateCounter(total);
+  }
+
+  function animateCounter(target) {
+    const el = document.getElementById('result-amount');
+    const duration = 1800;
+    const start = performance.now();
+    function tick(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(ease * target);
+      el.textContent = '$' + current.toLocaleString('it-IT');
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = '$' + target.toLocaleString('it-IT');
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function shareResult() {
+    const btn = document.getElementById('share-btn');
+    const text = `📱 Instagram ha guadagnato $${finalTotal.toLocaleString('it-IT')} da me in ${finalYears} anni. Quanto hanno guadagnato da te? 👀`;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.classList.add('done');
+      btn.textContent = '✅  Copiato negli appunti!';
+      setTimeout(() => {
+        btn.classList.remove('done');
+        btn.innerHTML = '📋 &nbsp;Copia il risultato da condividere';
+      }, 2500);
+    });
+  }
+
+  function recalculate() {
+    const section = document.getElementById('result-section');
+    section.classList.remove('visible');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll('input[type="number"]').forEach(el => el.value = '');
+    document.querySelectorAll('input[type="radio"]').forEach(el => el.checked = false);
+  }
+</script>
+</body>
+</html>

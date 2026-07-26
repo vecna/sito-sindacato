@@ -14,15 +14,24 @@ La grande trasformazione economica del XXI secolo consiste precisamente in quest
 
 ---
 
-# L'avvio del Sindacato durante il Festival di NINA
+{{< sezione sfondo="#c8f500" titolo="L'avvio del Sindacato durante il Festival di NINA" >}}
 
-<a href="/it/eventi" class="btn">Gli eventi al Lancio</a>
- 
-Unisciti a noi a Milano e Roma il 9 e 10 Maggio 2026 per workshop, sperimentazioni e incontri.
+### Grazie a chi è unita il [9 e 10 Maggio 2026](https://nina.watch/festival.html) per workshop, sperimentazioni e incontri. Qui il materiale usato e prodotto:
+
+* l'applicazione [Ghòstati!](/ghostati)
+* La presentazione del Sindacato con [Risorse Veramente Umane](/it/eventi/presentazione-RVU-Festival-2026.html)
+* La presentazione di [Bonifacio VIII](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf) (pdf)
+* La presentazione di [Quanti Soldi ci deve Facebook?](/pdf/festival-26/Quanti_soldi_ci_deve_facebook.pdf) (pdf), e i risultati dell'esperimento:
+  * [Facebook profit ](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-profit.html)
+  * [Facebook value calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-value-calculator.html)
+  * [Instagram money calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/instagram-money-calculator.html)
+  * [Quanto ci deve Facebook](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/quanto_ci_deve_facebook.html)
+
+{{< /sezione >}}
 
 ## Necessità di un sindacato universale digitale
 
-Ogni forma storica di lavoro ha generato, prima o poi, forme di organizzazione collettiva. La fabbrica industriale ha generato il sindacato operaio e le società di mutuo soccorso.Anche l’essere digitale deve compiere questo decisivo passo di autodifesa della propria classe che coincide con la salvaguardia e la sopravvivenza dell’intera specie. 
+Ogni forma storica di lavoro ha generato, prima o poi, forme di organizzazione collettiva. La fabbrica industriale ha generato il sindacato operaio e le società di mutuo soccorso. Anche l’essere digitale deve compiere questo decisivo passo di autodifesa della propria classe che coincide con la salvaguardia e la sopravvivenza dell’intera specie. 
 La società digitale esige un sindacato universale dei produttori di valore informazionale. Questo sindacato non può essere nazionale.Le infrastrutture digitali sono transnazionali, dunque il sindacato che evochiamo deve essere un sindacato digitale universale.[^4]
 La sua funzione non è semplicemente difensiva.Deve ridefinire il rapporto tra società umane e infrastrutture tecnologiche, tra individui e collettività, tra valore economico e valore sociale, tra proprietà e improprietà, tra sfera pubblica e sfera privata
 
