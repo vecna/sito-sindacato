@@ -1,7 +1,8 @@
 {
-    "version": "1.0",
-    "type": "link",
-    "title": "Ghòstati!",
-    "provider_name": "NINA",
-    "provider_url": "https://sindacato.nina.watch"
+  "version": "1.0",
+  "type": "link",
+  "title": "Ghòstati! — Workshop e segnalazioni con NINA",
+  "provider_name": "NINA",
+  "provider_url": "https://sindacato.nina.watch",
+  "thumbnail_url": "https://sindacato.nina.watch/images/ghostati/workshops/ws1-painting-1.jpg"
 }

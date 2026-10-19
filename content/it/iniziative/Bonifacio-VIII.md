@@ -3,6 +3,7 @@ title: "Bonifacio VIII"
 subtitle: "Un dispositivo di disincanto contro il safety-washing dell'AI"
 date: 2026-03-20
 weight: 4
+translationKey: "initiative-bonifacio-viii"
 ---
 
 Il nostro obiettivo è smascherare l'illusione della sicurezza algoritmica commerciale rilasciando **Bonifacio VIII**: un modello linguistico open-source spogliato di qualsiasi filtro cosmetico, eseguibile localmente e totalmente ispezionabile. Concepito come un vero e proprio "dispositivo pedagogico negativo", Bonifacio VIII non è progettato per essere l'ennesimo assistente cortese ed edificante, bensì per esporre la grammatica dell'abuso e le capacità che le interfacce addomesticate nascondono. 

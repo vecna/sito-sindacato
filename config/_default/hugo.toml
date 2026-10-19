@@ -8,13 +8,12 @@ defaultContentLanguageInSubdir = true
     [markup.goldmark.renderer]
       unsafe = true
     [markup.goldmark.extensions]
-      [markup.goldmark.extensions.footnote]
-        # Standard Goldmark footnotes enabled by default
+      footnote = true
 
 [taxonomies]
 
 [outputs]
-  home = ["HTML", "RSS", "SITEMAP"]
+  home = ["HTML", "RSS"]
   section = ["HTML"]
   page = ["HTML"]
 

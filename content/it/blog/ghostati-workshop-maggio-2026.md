@@ -26,7 +26,7 @@ Con [Michelle Tylicki](https://www.michelletylicki.info/), abbiamo imparato a sp
 
 ---
 
-L'applicazione web [Ghòstati!](https://sindacato.nina.watch/ghostati) è adesso pienamente attiva e utilizzabile da chiunque voglia sperimentare direttamente dal proprio browser in totale privacy[^2].
+L'applicazione web [Ghòstati!](https://sindacato.nina.watch/ghostati/) è adesso pienamente attiva e utilizzabile da chiunque voglia sperimentare direttamente dal proprio browser in totale privacy[^2].
 
 [^1]: Per approfondire le minacce della sorveglianza biometrica di massa e la campagna europea, vedi l'iniziativa dei cittadini europei [Reclaim Your Face](https://reclaimyourface.eu).
-[^2]: Il codice dell'applicazione è interamente open source ed ispezionabile sul repository ufficiale [vecna/ghostati](https://github.com/vecna/ghostati).
+[^2]: Il laboratorio è software libero ed esegue il riconoscimento nel browser. La condivisione di una clip è facoltativa e richiede un consenso esplicito.

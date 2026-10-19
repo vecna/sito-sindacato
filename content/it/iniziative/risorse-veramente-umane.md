@@ -3,6 +3,7 @@ title: "Risorse Veramente Umane"
 subtitle: "L'AI ha infiltrato il processo di selezione del personale, gamificandolo"
 date: 2026-04-15
 weight: 1
+translationKey: "initiative-really-human-resources"
 ---
 
 

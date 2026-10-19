@@ -1,0 +1,3 @@
+{{- $destination := .Destination -}}
+{{- $isLab := or (hasPrefix $destination "/ghostati") (hasPrefix $destination "https://sindacato.nina.watch/ghostati") -}}
+<a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isLab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

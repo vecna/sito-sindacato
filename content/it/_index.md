@@ -18,7 +18,7 @@ La grande trasformazione economica del XXI secolo consiste precisamente in quest
 
 ### Grazie a chi è unita il [9 e 10 Maggio 2026](https://nina.watch/festival.html) per workshop, sperimentazioni e incontri. Qui il materiale usato e prodotto:
 
-* l'applicazione [Ghòstati!](/ghostati)
+* l'applicazione [Ghòstati!](/ghostati/)
 * La presentazione del Sindacato con [Risorse Veramente Umane](/it/eventi/presentazione-RVU-Festival-2026.html)
 * La presentazione di [Bonifacio VIII](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf) (pdf)
 * La presentazione di [Quanti Soldi ci deve Facebook?](/pdf/festival-26/Quanti_soldi_ci_deve_facebook.pdf) (pdf), e i risultati dell'esperimento:

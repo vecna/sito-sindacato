@@ -21,9 +21,15 @@
       <li><a href="{{ .URL }}" class="nav-link">{{ .Name }}</a></li>
       {{- end }}
       <li class="spacer"></li>
-      {{- range hugo.Sites }}
+      {{- $current := . -}}
+      {{- range $current.Site.Home.AllTranslations }}
+      {{- $target := .RelPermalink -}}
+      {{- $lang := .Language.Lang -}}
+      {{- range $current.AllTranslations -}}
+        {{- if eq .Language.Lang $lang -}}{{- $target = .RelPermalink -}}{{- end -}}
+      {{- end -}}
       <li>
-        <a href="/{{ .Language.Lang }}/"
+        <a href="{{ $target }}"
            class="nav-link lang-link{{ if eq $.Language.Lang .Language.Lang }} lang-active{{ end }}">
           {{ upper .Language.Lang }}
         </a>

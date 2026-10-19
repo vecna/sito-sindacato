@@ -3,6 +3,7 @@ title: "Quanti Soldi ti deve Facebook?"
 subtitle: "Sperimentazione di nuove forme di negoziazione per il lavoro digitale"
 date: 2026-04-05
 weight: 3
+translationKey: "initiative-how-much-money-does-facebook-owe-you"
 ---
 
 Tu lavori per i social media[^0]: sei la loro fonte di reddito. Più persone vengono incasellate ad *utenti* e più queste piattaforme prendono valore, influenza, e potere. Facciamoci riconoscere questo valore. Iniziamo dal calcolare quanti soldi ci deve Facebook (e le altre grandi piattaforme dello sfruttamento). È chiaro che Meta e nessuna piattaforma ritenga di dover alcunchè a chiunque. Ma questo non significa che non si possa fare pressione: per questo dobbiamo essere in molti!

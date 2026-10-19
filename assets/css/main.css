@@ -1015,3 +1015,24 @@ body.section-blog .csv-table__table thead th {
     gap: 1rem;
   }
 }
+
+/* Migrated Ghòstati! workshop and reporting pages; scoped to these contents. */
+.ghostati-workshop img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.ghostati-workshop figure { margin: 1.4rem 0 2.5rem; }
+.ghostati-workshop figcaption { margin-top: .65rem; font-size: .9rem; color: var(--color-text-muted); }
+.ghostati-workshop .content-page__step { margin-top: 2.5rem; font-weight: 700; font-size: 1.3rem; }
+.ghostati-workshop .signal-qr img,
+.ghostati-workshop img[src*="qrcode"] { width: 300px; max-width: 100%; background: white; }
+.ghostati-report { overflow-wrap: anywhere; }
+.ghostati-report section { margin: 2rem 0; }
+.ghostati-report .report-icon,
+.ghostati-report .audience-card__icon img { width: 72px; height: 72px; object-fit: contain; }
+.ghostati-report .channel-icon img { width: 24px; height: 24px; }
+.ghostati-report img { max-width: 72px; height: auto; vertical-align: middle; }
+.ghostati-report .audience-card { padding: 1.5rem; margin: 1.25rem 0; border: 1px solid var(--color-border); }
+.ghostati-report .audience-card__channels { display: flex; flex-wrap: wrap; gap: 1rem; }
+.ghostati-report .resource-card { display: block; margin: 1rem 0; }
+.ghostati-report h2, .ghostati-report h3 { scroll-margin-top: calc(var(--nav-height) + 1rem); }
+.ghostati-report .audience-card__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.ghostati-report .audience-card__access { display: inline-flex; align-items: center; gap: .4rem; }
+.ghostati-report .audience-card__access img { width: 24px; height: 24px; }

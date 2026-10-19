@@ -1,42 +1,43 @@
-{{ $lang := .Language.Lang }}
-{{ $isHome := .IsHome }}
-{{ $relDataPath := "" }}
-
-{{ if $isHome }}
-  {{ $relDataPath = "_index" }}
-{{ else }}
-  {{/* .File.Dir contains a trailing slash, e.g., 'iniziative/' or '' */}}
-  {{ $dir := .File.Dir }}
-  {{ $base := .File.TranslationBaseName }}
-  {{ $relDataPath = printf "%s%s" $dir $base }}
-{{ end }}
-
-{{/* Paths */}}
-{{ $jsonPath := printf "data/%s/%s.json" $lang $relDataPath }}
-{{ $ogpPath := printf "data/%s/%s.ogp" $lang $relDataPath }}
-
-{{/* Include OGP */}}
-{{ if fileExists $ogpPath }}
+{{- $lang := .Language.Lang -}}
+{{- $relDataPath := "_index" -}}
+{{- with .File -}}{{- $relDataPath = printf "%s%s" .Dir .TranslationBaseName -}}{{- end -}}
+{{- $jsonPath := printf "data/%s/%s.json" $lang $relDataPath -}}
+{{- $ogpPath := printf "data/%s/%s.ogp" $lang $relDataPath -}}
+{{- $description := .Params.description | default (.Summary | plainify | htmlUnescape | truncate 180) -}}
+{{- $image := "" -}}
+{{- with .Params.image -}}{{- $image = . | absURL -}}{{- else -}}
+  {{- with resources.Get "images/NINA-square-icon.png" -}}{{- $image = .Permalink -}}{{- end -}}
+{{- end -}}
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="description" content="{{ $description }}">
+{{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+{{ if and (fileExists $ogpPath) (not .Params.seoDynamic) }}
   {{ readFile $ogpPath | safeHTML }}
 {{ else }}
-  <!-- Fallback OGP -->
-  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ site.Title }}">
-  {{ $img := resources.Get "images/NINA-square-icon.png" }}
-  <meta property="og:image" content="{{ if $img }}{{ $img.Permalink }}{{ else }}{{ "/images/NINA-square-icon.png" | absURL }}{{ end }}">
-  <meta property="og:description" content="{{ .Summary | default site.Params.description | truncate 160 }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ .Title }} — {{ site.Title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if eq .Section "blog" }}article{{ else }}website{{ end }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="{{ if eq $lang "it" }}it_IT{{ else }}en_GB{{ end }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:alt" content="{{ .Title }}">
 {{ end }}
-
-{{/* Include JSON-LD */}}
-{{ if fileExists $jsonPath }}
-  <script type="application/ld+json">
-  {{ readFile $jsonPath | safeJS }}
-  </script>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
+<meta name="twitter:image:alt" content="{{ .Title }}">
+{{ if and (fileExists $jsonPath) (not .Params.seoDynamic) }}
+<script type="application/ld+json">{{ readFile $jsonPath | safeJS }}</script>
+{{ else }}
+  {{- $type := "WebPage" -}}
+  {{- if eq .Section "blog" -}}{{- $type = "BlogPosting" -}}{{- end -}}
+  {{- $schema := dict "@context" "https://schema.org" "@type" $type "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" .Title "headline" .Title "description" $description "inLanguage" $lang "image" $image "publisher" (dict "@type" "Organization" "name" "NINA" "url" "https://nina.watch/") -}}
+  {{- if eq .Section "blog" -}}
+    {{- $schema = merge $schema (dict "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "mainEntityOfPage" .Permalink) -}}
+  {{- end -}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
 {{ end }}
-
-{{/* Include oEmbed */}}
-{{ $oembedStaticPath := printf "static/%s/%s/oembed.json" $lang $relDataPath }}
-{{ if fileExists $oembedStaticPath }}
-  <link rel="alternate" type="application/json+oembed" href="/{{ $lang }}/{{ $relDataPath }}/oembed.json">
-{{ end }}
+{{- $oembedStaticPath := printf "static/%s/%s/oembed.json" $lang $relDataPath -}}
+{{ if fileExists $oembedStaticPath }}<link rel="alternate" type="application/json+oembed" href="{{ printf "/%s/%s/oembed.json" $lang $relDataPath | absURL }}">{{ end }}

@@ -16,7 +16,7 @@ The Universal Digital Union serves as a transnational collective defense to rede
 
 Below is the list of active materials, platforms, and interactive calculators developed for the launch:
 
-* **[Ghòstati!](/ghostati) Web App**: A local, private biometric camouflage testing tool.
+* **[Ghòstati!](/ghostati/) Web App**: A local, private biometric camouflage testing tool.
 * **[Really Human Resources Launch Slides](/it/eventi/presentazione-RVU-Festival-2026.html)**: Our campaign blueprint to map and contest automated recruitment filters.
 * **[Bonifacio VIII Presentation PDF](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf)**: Slides presenting our inspectable, uncensored chatbot concept.
 * **[How Much Money Does Facebook Owe You? Presentation PDF](/pdf/festival-26/Quanti_soldi_ci_deve_facebook.pdf)**: Slides estimating the financial value extracted from users.

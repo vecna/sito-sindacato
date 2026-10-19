@@ -3,18 +3,29 @@ title: "Ghòstati!"
 subtitle: "Esperimenti di trucco avversariale per ingannare il riconoscimento facciale"
 date: 2026-04-10
 weight: 2
+translationKey: "initiative-ghostati"
+description: "Ghòstati! è l’iniziativa di NINA per workshop di autodifesa visiva e segnalazioni riservate sulla sorveglianza biometrica."
+image: "/images/ghostati/workshops/ws1-painting-1.jpg"
+seoDynamic: true
 ---
 
 ## L'applicazione 
 
 {{< sezione sfondo="#00e5ff" titolo="Una webapp che ti insegna a truccarti e ti assiste negli esperimenti" >}}
 
-# [Ghòstati!](https://sindacato.nina.watch/ghostati) e diventa un fantasma agli occhi della *Computer Vision*
+### [Ghòstati!](https://sindacato.nina.watch/ghostati/) e diventa un fantasma agli occhi della *Computer Vision*
 
-* [Software libero](https://github.com/vecna/ghostati), che funziona su ogni browser e non riceve alcun dato relativo ai tuoi esperimenti.
+* Un laboratorio libero che elabora il video nel browser. Gli esperimenti restano sul dispositivo; solo un invio volontario e consentito condivide una clip con la galleria.
 * I trucchi di successo possono essere condivisi come immagini a chi vuoi tu, o programmati sotto forma di codice, così che altre possano replicare i successi.
 
 {{< /sezione >}}
+
+## Workshop e segnalazioni con NINA
+
+**Ghòstati!** è l’iniziativa del Sindacato Universale di NINA, con lo stesso nome in italiano e in inglese. NINA organizza i workshop e gestisce la raccolta riservata di informazioni sui sistemi di riconoscimento facciale.
+
+* [Organizza un workshop: guida pratica e gruppo Signal](/it/blog/ghostati-workshop-ottobre-2026/).
+* [Segnala un sistema: cinque percorsi e indicazioni di sicurezza](/it/ghostati/segnalazioni/).
 
 ## Cosa ? Perché ?
 
@@ -35,7 +46,7 @@ Utilizzando tecniche di trucco (anche note come *adversarial make-up*), pattern 
 
 ## Mappare un ecosistema di silenzi
 
-Non possiamo sapere con precisione se questi sistemi funzionano su tutte le tecnologie di riconoscimento facciale. Con la convinzione che chi lavora in quel settore e con quegli strumenti non per forza sposi la causa della sorveglianza indiscriminata, [abbiamo aperto questo canale anonimo di raccolta informazioni](https://raccontaci.nina.watch/#/submission?context=10c78596-3ea0-4867-b2fb-21fdb8e3f40c):
+Non possiamo sapere con precisione se questi sistemi funzionano su tutte le tecnologie di riconoscimento facciale. Con la convinzione che chi lavora in quel settore e con quegli strumenti non per forza sposi la causa della sorveglianza indiscriminata, [abbiamo aperto questo canale anonimo di raccolta informazioni](/it/ghostati/segnalazioni/):
 
 {{< sezione sfondo="#c8f500" titolo="Facciamo luce sulla segretezza" >}}
 
@@ -43,7 +54,7 @@ Non possiamo sapere con precisione se questi sistemi funzionano su tutte le tecn
 
 Sai di qualche luogo in cui questo avviene? conosci il fornitore, la tecnologia utilizzata, chi ha accesso ai dati, quanti limiti e abusi porta con se?
 
-### [Raccontacelo: è fondamentale per aggiornare le forme di resistenza](https://raccontaci.nina.watch/#/submission?context=10c78596-3ea0-4867-b2fb-21fdb8e3f40c)
+### [Raccontacelo: è fondamentale per aggiornare le forme di resistenza](/it/ghostati/segnalazioni/)
 
 {{< /sezione >}}
 
@@ -54,4 +65,3 @@ Sai di qualche luogo in cui questo avviene? conosci il fornitore, la tecnologia 
 [^2]: Privacy Network [SARI enterprise](https://privacy-network.it/digital-surveillance/rapporti/sari-enterprise/), rapporto.
 [^3]: Yinpeng Dong et al. (2021), [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/pdf/2105.03162).
 [^4]: [Adversarial Robustness Toolbox]( https://adversarial-robustness-toolbox.readthedocs.io/en/latest/) (ART), *Documentazione ufficiale sulle tecniche di Evasione Spaziale e DPatch*, IBM.
-[^5]: Ghòstati! su github [vecna/ghostati](https://github.com/vecna/ghostati).

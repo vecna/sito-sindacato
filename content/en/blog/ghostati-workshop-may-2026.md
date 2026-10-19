@@ -17,8 +17,7 @@ While we intend to establish a Europe-wide network of biometric evasion training
 
 You can access the active application, visual models, and campaign links below:
 
-* **[Ghòstati! Web App](https://sindacato.nina.watch/ghostati)**: Interactive browser tool to test adversarial makeup via webcam.
-* **[Ghostati GitHub Repository](https://github.com/vecna/ghostati)**: Open-source repository containing the local recognition model code.
+* **[Ghòstati! Web App](https://sindacato.nina.watch/ghostati/)**: Interactive browser tool to test adversarial makeup via webcam.
 * **[Reclaim Your Face Campaign](https://reclaimyourface.eu)**: The European biometric surveillance ban campaign.
 * **[Michelle Tylicki's Website](https://www.michelletylicki.info/)**: The expert makeup artist who co-led the physical workshops.
 
