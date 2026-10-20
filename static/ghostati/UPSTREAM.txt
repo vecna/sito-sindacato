@@ -1,5 +1,5 @@
 Source: https://github.com/vecna/ghostmaxxing.git
-Commit: eba746af998c931b5b8f3b5e807b0e5aa692ab3b
+Commit: 2f6ba616d4a0181079c73e1a947f46c8224a9090
 Licence declared upstream: AGPL-3.0-or-later
 Brand and source attribution retained. Imported by scripts/update-ghostati-lab.py.
 Recognition assets are local; optional uploads and gallery use the configured backend.

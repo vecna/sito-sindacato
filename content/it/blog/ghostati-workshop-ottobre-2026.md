@@ -1,6 +1,6 @@
 ---
-title: "Ghòstati! — Porta il tuo volto e la tua curiosità"
-description: "Come organizzare un workshop Ghòstati!: trucchi, esperimenti locali e il gruppo Signal delle persone facilitatrici di NINA."
+title: "Ghòstati! Il workshop — Porta la faccia e la curiosità"
+description: "Come organizzare un workshop di Ghòstati!, per spaccarsi la faccia che il riconoscimento automatizzato vorrebbe vedere."
 url: "/it/blog/ghostati-workshop-ottobre-2026/"
 translationKey: "ghostati-workshop-october-2026"
 image: "/images/ghostati/workshops/ws1-painting-1.jpg"
@@ -62,7 +62,5 @@ Le persone che vogliono facilitare un workshop possono unirsi al gruppo Signal q
 [Gruppo Signal delle persone facilitatrici](https://signal.group/#CjQKIMobCBGOiGL1UiI-jwRs-9eg5AeRTJ-o2EN9rZ9IIXdKEhDjx3VVebD70MRLUBMZCTiu), oppure scansiona il QR code:
 
 <figure class="signal-qr"><img src="/images/ghostati/workshops/gstmxx-facilitators-qrcode.jpg" alt="QR code per entrare nel gruppo Signal delle persone facilitatrici" loading="lazy"></figure>
-
-Prima di organizzarne uno, consulta l’[archivio dei riferimenti](https://ghostmaxxing.vecna.eu/references/) per conoscere lo stato dell’arte.
 
 </div>

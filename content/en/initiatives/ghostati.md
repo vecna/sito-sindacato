@@ -21,7 +21,7 @@ We advocate for a unified European ban on mass biometric monitoring. Following t
 
 Test the laboratory, organise a workshop or share what you know about biometric surveillance:
 
-* **[Ghòstati! Web App](https://sindacato.nina.watch/ghostati/)**: An open-source, local-processing tool to live-test the effectiveness of your adversarial makeup via webcam.
+* **[Ghòstati! Web App](/ghostati/)**: An open-source, local-processing tool to live-test the effectiveness of your adversarial makeup via webcam - (know more about the [technology](en/blog/ghostati-new-software/).
 * **[Report biometric surveillance](/en/ghostati/report/)**: Five reporting routes, security guidance and confidential submission channels managed by NINA.
 * **[Organise a Ghòstati! workshop](/en/blog/ghostati-workshop-october-2026/)**: A practical guide, photographs and the facilitators’ Signal group.
 * **[SARI Enterprise Report by Privacy Network](https://privacy-network.it/digital-surveillance/rapporti/sari-enterprise/)**: An investigative report on Italian automated public surveillance tools.
