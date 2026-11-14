@@ -486,6 +486,261 @@ header {
   color: inherit;
 }
 
+/* ==========================================================================
+   PRASSI / PRAXIS
+   A tactical layer beneath the initiatives, using the full NINA palette.
+   ========================================================================== */
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.praxis-module {
+  margin-top: clamp(4rem, 8vw, 7rem);
+  padding-top: 2rem;
+  border-top: 2px solid var(--black);
+}
+
+.praxis-module__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, .8fr);
+  column-gap: clamp(2rem, 6vw, 6rem);
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.praxis-module__header .label {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.praxis-module__header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.praxis-module__header p {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  color: var(--black);
+}
+
+.praxis-module__all {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.praxis-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: .65rem;
+}
+
+.praxis-card {
+  grid-column: span 2;
+  min-height: 250px;
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  background: var(--praxis-card-bg, var(--lime));
+  border: 1.5px solid var(--black);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.praxis-card:nth-child(4) { grid-column: 2 / span 2; }
+.praxis-card:nth-child(5) { grid-column: 4 / span 2; }
+
+.praxis-card:hover,
+.praxis-card:focus-visible {
+  color: var(--black);
+  text-decoration: none;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 var(--black);
+}
+
+.praxis-card__number {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.praxis-card h3 {
+  margin: 2.5rem 0 .7rem;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.08;
+  letter-spacing: -.02em;
+  text-transform: none;
+  color: inherit;
+}
+
+.praxis-card p {
+  margin: 0;
+  font-size: .96rem;
+  line-height: 1.5;
+  font-weight: 450;
+  color: inherit;
+}
+
+.praxis-card__arrow {
+  margin-top: auto;
+  padding-top: 1.4rem;
+  font-size: 1.5rem;
+}
+
+body.section-prassi,
+body.section-praxis {
+  --color-bg: var(--lime);
+  --color-text: var(--black);
+  --color-text-muted: #293200;
+  --color-border: rgba(10, 10, 10, .32);
+  --color-surface: color-mix(in srgb, var(--lime) 72%, var(--white));
+  background: var(--lime);
+  color: var(--black);
+}
+
+body.section-prassi p,
+body.section-prassi ul,
+body.section-prassi ol,
+body.section-praxis p,
+body.section-praxis ul,
+body.section-praxis ol {
+  color: var(--black);
+}
+
+body.section-prassi .site-footer,
+body.section-praxis .site-footer {
+  background: var(--lime);
+  border-top-color: rgba(10, 10, 10, .25);
+}
+
+body.section-prassi .site-footer p,
+body.section-praxis .site-footer p {
+  color: #293200;
+}
+
+.praxis-index__intro {
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+.praxis-index__intro p {
+  font-size: clamp(1.25rem, 2.25vw, 1.7rem);
+  line-height: 1.55;
+  font-weight: 430;
+}
+
+.praxis-index .praxis-module {
+  margin-top: 2.5rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.praxis-page {
+  --color-accent: var(--praxis-accent, var(--purple));
+}
+
+.praxis-page h1 {
+  max-width: 850px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: .95;
+}
+
+.praxis-page__subtitle {
+  max-width: 760px;
+  margin-bottom: 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.praxis-wip {
+  max-width: 680px;
+  margin: 2rem 0 3.5rem;
+  padding: .8rem 1rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .5rem 1rem;
+  align-items: baseline;
+  color: var(--black);
+  background: var(--purple);
+  border: 1px solid var(--black);
+}
+
+.praxis-wip strong {
+  font-family: var(--font-mono);
+  font-size: .67rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.praxis-wip span {
+  font-size: .88rem;
+  line-height: 1.45;
+}
+
+.praxis-page__copy {
+  max-width: 780px;
+}
+
+.praxis-page__copy > p {
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.62;
+  font-weight: 430;
+}
+
+.praxis-page__copy strong {
+  text-decoration: underline;
+  text-decoration-thickness: .1em;
+  text-underline-offset: .12em;
+}
+
+.praxis-page__back {
+  display: inline-block;
+  margin-top: 3rem;
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .praxis-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .praxis-card:nth-child(4) { grid-column: span 2; }
+  .praxis-card:nth-child(5) { grid-column: 2 / span 2; }
+}
+
+@media (max-width: 760px) {
+  .praxis-module__header { grid-template-columns: 1fr; }
+  .praxis-module__header p { margin-top: 1rem; }
+  .praxis-grid { grid-template-columns: 1fr; }
+  .praxis-card,
+  .praxis-card:nth-child(4),
+  .praxis-card:nth-child(5) { grid-column: auto; }
+  .praxis-card { min-height: 210px; }
+  .praxis-wip { grid-template-columns: 1fr; }
+  .praxis-page h1 { font-size: clamp(2.7rem, 15vw, 4.5rem); }
+}
+
 
 /* ==========================================================================
    BUTTONS (CTA style from nina.watch)

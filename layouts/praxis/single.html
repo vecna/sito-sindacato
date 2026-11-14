@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="page-content sidenote-layout praxis-page"{{ with .Params.card_color }} style="--praxis-accent: {{ . }}"{{ end }}>
+  <div class="content-body">
+    <div class="label">{{ if eq .Language.Lang "en" }}Praxis{{ else }}Prassi{{ end }} · 0{{ .Weight }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="praxis-page__subtitle">{{ . }}</p>{{ end }}
+    <aside class="praxis-wip" aria-label="{{ if eq .Language.Lang "en" }}Work in progress{{ else }}Lavori in corso{{ end }}">
+      <strong>{{ if eq .Language.Lang "en" }}Work in progress{{ else }}Lavori in corso{{ end }}</strong>
+      <span>{{ if eq .Language.Lang "en" }}This text is provisional. We are testing this praxis and will revise it through collective work.{{ else }}Questo testo è provvisorio. Stiamo sperimentando questa prassi e la rivedremo attraverso il lavoro collettivo.{{ end }}</span>
+    </aside>
+    <div class="praxis-page__copy">{{ .Content }}</div>
+    <a class="praxis-page__back" href="{{ if eq .Language.Lang "en" }}/en/praxis/{{ else }}/it/prassi/{{ end }}">&larr; {{ if eq .Language.Lang "en" }}All praxis{{ else }}Tutte le prassi{{ end }}</a>
+  </div>
+</article>
+{{ end }}

@@ -29,3 +29,5 @@ Below is the list of active materials, platforms, and interactive calculators de
 {{< /sezione >}}
 
 Explore [the initiatives](/en/initiatives/) to learn more about our self-defense practices.
+
+{{< praxis_cards >}}

@@ -17,6 +17,10 @@
       </a>
       {{ end }}
     </div>
+
+    {{ if or (eq .Section "iniziative") (eq .Section "initiatives") }}
+      {{ partial "praxis-cards.html" (dict "page" . "showHeading" true) }}
+    {{ end }}
   </div>
 </article>
 {{ end }}

@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="page-content praxis-index">
+  <div class="content-body-wide">
+    <div class="label">{{ if eq .Language.Lang "en" }}Praxis{{ else }}Prassi{{ end }}</div>
+    <h1>{{ .Title }}</h1>
+    <div class="praxis-index__intro">{{ .Content }}</div>
+    {{ partial "praxis-cards.html" (dict "page" . "showHeading" false) }}
+  </div>
+</article>
+{{ end }}
