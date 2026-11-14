@@ -1,13 +1,13 @@
 ---
-title: "Il fuzzer di Ghostmaxxing cerca Ghostyle sul tuo volto: beta tecnica"
+title: "Il nuovo fuzzer che prova infiniti trucchi su un video del volto: nuovo esperimento"
 description: Come provare il Local Fuzzer 1.1.0, leggere escape rate e pose atlas, condividere statistiche anonime e Ghostyle selezionati senza inviare video o descrittori.
-url: /it/blog/fuzzer-ghostmaxxing-beta/
-translationKey: ghostmaxxing-local-fuzzer-beta
+url: /it/blog/fuzzer-beta/
+translationKey: local-fuzzer-beta
 initiative: ghostati
 image: /images/ghostati/fuzzer/fuzzer-candidates.png
 date: 2026-11-12T20:00:00+01:00
 tags:
-  - Ghostmaxxing
+  - Ghòstati!
   - fuzzer
   - beta
   - face recognition
@@ -131,4 +131,4 @@ Dopo una prova, raccontaci soprattutto:
 
 Le statistiche aggregate servono a confrontare ricette e condizioni, non a costruire un dataset di volti. I moduli selezionati potranno essere provati su altri atlas; le ricette che ricorrono con buoni risultati su persone diverse sono più interessanti del singolo candidato migliore.
 
-Codice, issue e ricette sono nel repository [Ghostmaxxing](https://github.com/vecna/ghostmaxxing). La [guida del Local Fuzzer](https://ghostmaxxing.vecna.eu/docs/guides/localfuzzer.html) copre installazione e flusso; la [guida al report](https://ghostmaxxing.vecna.eu/docs/guides/localfuzzer-report.html) entra nel dettaglio delle misure.
+Codice, issue e ricette sono nel [repository del fuzzer](https://github.com/vecna/ghostmaxxing). La [guida del Local Fuzzer](https://ghostmaxxing.vecna.eu/docs/guides/localfuzzer.html) copre installazione e flusso; la [guida al report](https://ghostmaxxing.vecna.eu/docs/guides/localfuzzer-report.html) entra nel dettaglio delle misure.
