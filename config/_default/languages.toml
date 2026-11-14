@@ -1,5 +1,5 @@
 [it]
-  languageName = "Italiano"
+  label = "Italiano"
   contentDir = "content/it"
   weight = 1
   [it.params]
@@ -7,7 +7,7 @@
     initiativesLabel = "Le Iniziative"
 
 [en]
-  languageName = "English"
+  label = "English"
   contentDir = "content/en"
   weight = 2
   [en.params]
