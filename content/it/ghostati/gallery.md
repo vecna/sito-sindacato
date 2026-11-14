@@ -4,6 +4,7 @@ subtitle: "Esempi da usare come orientamento. Ogni volto richiede un trucco dive
 description: "Una gallery di esempi dai workshop Ghòstati!"
 url: "/it/ghostati/gallery/"
 layout: "gallery"
+translationKey: "ghostati-gallery"
 initiative: "ghostati"
 image: "/images/ghostati/gallery/ghostati-risultato-roma-02.jpg"
 date: 2026-11-02T18:00:00+01:00

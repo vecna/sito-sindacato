@@ -1,19 +1,22 @@
-<aside class="ghostati-strip" aria-label="Esplora Ghòstati!">
+{{- $english := eq .Site.Language.Lang "en" -}}
+{{- $galleryURL := "/it/ghostati/gallery/" -}}
+{{- if $english -}}{{- $galleryURL = "/en/ghostati/gallery/" -}}{{- end -}}
+<aside class="ghostati-strip" aria-label="{{ if $english }}Explore Ghòstati!{{ else }}Esplora Ghòstati!{{ end }}">
   <div class="ghostati-strip__copy">
     <strong>Ghòstati!</strong>
-    <span>Prova, guarda esempi, porta il laboratorio con te.</span>
+    <span>{{ if $english }}Try it, browse examples, take the lab with you.{{ else }}Prova, guarda esempi, porta il laboratorio con te.{{ end }}</span>
   </div>
-  <a class="ghostati-strip__thumbs" href="/it/ghostati/gallery/" aria-label="Apri la gallery Ghòstati!">
+  <a class="ghostati-strip__thumbs" href="{{ $galleryURL }}" aria-label="{{ if $english }}Open the Ghòstati! gallery{{ else }}Apri la gallery Ghòstati!{{ end }}">
     <img src="/images/ghostati/gallery/ghostati-lavoro-corso-roma-01.jpg" alt="">
     <img src="/images/ghostati/gallery/ghostati-risultato-roma-01.jpg" alt="">
     <img src="/images/ghostati/gallery/ghostati-risultato-roma-02.jpg" alt="">
     <img src="/images/ghostati/gallery/ghostati-lavoro-corso-roma-02.jpg" alt="">
   </a>
   <div class="ghostati-strip__links">
-    <a href="/it/ghostati/gallery/">Gallery</a>
-    <a href="/ghostati/">Apri il laboratorio</a>
+    <a href="{{ $galleryURL }}">Gallery</a>
+    <a href="/ghostati/">{{ if $english }}Open the lab{{ else }}Apri il laboratorio{{ end }}</a>
   </div>
-  <a class="ghostati-strip__qr" href="/ghostati/" aria-label="Apri il laboratorio Ghòstati!">
-    <img src="/images/ghostati/ghostati-lab-qr.svg" alt="QR code per aprire il laboratorio Ghòstati!">
+  <a class="ghostati-strip__qr" href="/ghostati/" aria-label="{{ if $english }}Open the Ghòstati! lab{{ else }}Apri il laboratorio Ghòstati!{{ end }}">
+    <img src="/images/ghostati/ghostati-lab-qr.svg" alt="{{ if $english }}QR code for opening the Ghòstati! lab{{ else }}QR code per aprire il laboratorio Ghòstati!{{ end }}">
   </a>
 </aside>

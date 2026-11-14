@@ -5,11 +5,12 @@ url: "/en/blog/ghostati-new-software/"
 translationKey: "ghostati-new-software"
 image: "/images/ghostati/workshops/ws1-painting-1.jpg"
 date: 2026-10-01
+initiative: "ghostati"
 ---
 
 The **Ghòstati!** laboratory has been updated. You can save your face, change your makeup, draw a digital intervention and watch where a face-analysis system stops tracking or recognising you.
 
-The software is called [Ghostmaxxing](https://ghostmaxxing.vecna.eu/): a free software project that other groups can also use. **Ghòstati!** is the initiative of NINA’s Universal Union that organises workshops and collects confidential reports about biometric surveillance. This division lets us develop a shared tool while building collective practices of experimentation and political action.
+The [Ghòstati! lab](https://ghostmaxxing.vecna.eu/) is a free software project that other groups can also use. **Ghòstati!** is also the initiative of NINA’s Universal Union that organises workshops and collects confidential reports about biometric surveillance. This continuity lets us develop a shared tool while building collective practices of experimentation and political action.
 
 <a href="/ghostati/" target="_blank" rel="noopener noreferrer">Open the lab and try it with your face.</a>
 
@@ -52,8 +53,8 @@ The software website also provides ways to find your bearings in this field:
 * The [genealogy](https://ghostmaxxing.vecna.eu/genealogy.html) connects families of systems and interventions over time. It helps explain why a method designed for an older detector may fail against a newer system.
 * The [documentation](https://ghostmaxxing.vecna.eu/docs/) guides you through the tools; the [developer section](https://ghostmaxxing.vecna.eu/docs/develop/) and [API reference](https://ghostmaxxing.vecna.eu/docs/jsdoc/) let you inspect and extend the code.
 
-The code is available in two repositories: [Ghostmaxxing](https://github.com/vecna/ghostmaxxing), for the browser laboratory, and [gstmxx-backend](https://github.com/vecna/gstmxx-backend), for receiving contributions, moderation and Fediverse publication.
+The code is available in two repositories: the [Ghòstati! lab repository](https://github.com/vecna/ghostmaxxing), for the browser application, and [gstmxx-backend](https://github.com/vecna/gstmxx-backend), for receiving contributions, moderation and Fediverse publication.
 
 Recognition is processed on your device. Clips are sent to the server only when you choose to share them and give consent; confidential reports use the [separate channel managed by NINA](/en/ghostati/report/).
 
-A successful result describes what happened with that model under those conditions. Finding out whether a pattern works on another system requires testing it. That is the work we want to do together: [run Ghòstati! workshops](/en/blog/ghostati-workshop-october-2026/), compare experiments and make the results verifiable.
+A successful result describes what happened with that model under those conditions. Finding out whether a pattern works on another system requires testing it. That is the work we want to do together: [run Ghòstati! workshops](/en/blog/how-to-run-a-ghostati-workshop/), compare experiments and make the results verifiable.

@@ -14,12 +14,12 @@
           <h2>{{ .title }}</h2>
           <p>{{ .caption }}</p>
           {{ with .video }}
-          <video class="ghostati-gallery__video" autoplay muted loop playsinline preload="metadata" aria-label="Verifica video: {{ $item.title }}">
+          <video class="ghostati-gallery__video" autoplay muted loop playsinline preload="metadata" aria-label="{{ if eq $.Site.Language.Lang "en" }}Video check:{{ else }}Verifica video:{{ end }} {{ $item.title }}">
             <source src="{{ . }}" type="video/mp4">
-            <a href="{{ . }}">Apri il video della verifica</a>
+            <a href="{{ . }}">{{ if eq $.Site.Language.Lang "en" }}Open the video check{{ else }}Apri il video della verifica{{ end }}</a>
           </video>
           {{ end }}
-          {{ with .outcome }}<p class="ghostati-gallery__outcome"><strong>Esito documentato:</strong> {{ . }}</p>{{ end }}
+          {{ with .outcome }}<p class="ghostati-gallery__outcome"><strong>{{ if eq $.Site.Language.Lang "en" }}Documented outcome:{{ else }}Esito documentato:{{ end }}</strong> {{ . }}</p>{{ end }}
         </figcaption>
       </figure>
       {{ end }}

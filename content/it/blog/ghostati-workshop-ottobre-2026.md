@@ -12,6 +12,8 @@ Il Sindacato Universale di NINA organizza i workshop **Ghòstati!**: esperimenti
 
 Proviamo insieme quanto poco trucco può bastare per cambiare il risultato di un sistema locale di riconoscimento facciale.
 
+Questa è la versione breve dell’attività. Per preparare un incontro trovi ora anche la [guida pratica completa](/it/blog/come-organizzare-un-workshop-ghostati/) e la [gallery di esempi](/it/ghostati/gallery/).
+
 <div class="ghostati-workshop">
 
 ## Come si svolge un incontro

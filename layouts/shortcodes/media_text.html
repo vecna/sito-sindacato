@@ -10,7 +10,7 @@
     {{- if $video }}
     <video autoplay muted loop playsinline preload="metadata" aria-label="{{ $alt }}">
       <source src="{{ $src }}" type="{{ if strings.HasSuffix $lower ".webm" }}video/webm{{ else }}video/mp4{{ end }}">
-      <a href="{{ $src }}">Apri il video</a>
+      <a href="{{ $src }}">{{ if eq .Page.Site.Language.Lang "en" }}Open the video{{ else }}Apri il video{{ end }}</a>
     </video>
     {{- else }}
     <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">

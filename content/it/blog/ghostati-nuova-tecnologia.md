@@ -10,7 +10,7 @@ initiative: "ghostati"
 
 Il laboratorio di **Ghòstati!** si rinnova. Puoi salvare il tuo volto, cambiare il trucco, disegnare un intervento digitale e osservare dove un sistema di analisi del viso smette di seguirti o di riconoscerti.
 
-Il software si chiama [Ghostmaxxing](https://ghostmaxxing.vecna.eu/): è un progetto libero, utilizzabile anche da altre realtà. **Ghòstati!** è l’iniziativa del Sindacato Universale di NINA che organizza i workshop e raccoglie segnalazioni riservate sulla sorveglianza biometrica. Questa divisione permette di sviluppare uno strumento condiviso e, insieme, costruire percorsi collettivi di sperimentazione e intervento politico.
+Il [laboratorio Ghòstati!](https://ghostmaxxing.vecna.eu/) è un progetto libero, utilizzabile anche da altre realtà. **Ghòstati!** è anche l’iniziativa del Sindacato Universale di NINA che organizza i workshop e raccoglie segnalazioni riservate sulla sorveglianza biometrica. Questa continuità permette di sviluppare uno strumento condiviso e, insieme, costruire percorsi collettivi di sperimentazione e intervento politico.
 
 <a href="/ghostati/" target="_blank" rel="noopener noreferrer">Apri il laboratorio e prova con il tuo volto.</a>
 
@@ -53,8 +53,8 @@ Il sito del software raccoglie anche strumenti per orientarsi in questo campo:
 * La [genealogia](https://ghostmaxxing.vecna.eu/genealogy.html) mette in relazione famiglie di sistemi e interventi nel tempo. Aiuta a capire perché un metodo pensato per un vecchio rilevatore possa non funzionare su un sistema più recente.
 * La [documentazione](https://ghostmaxxing.vecna.eu/docs/) accompagna l’uso degli strumenti; la [sezione per sviluppare](https://ghostmaxxing.vecna.eu/docs/develop/) e il [riferimento delle API](https://ghostmaxxing.vecna.eu/docs/jsdoc/) permettono di esaminare ed estendere il codice.
 
-Il codice è disponibile in due repository: [Ghostmaxxing](https://github.com/vecna/ghostmaxxing), per il laboratorio nel browser, e [gstmxx-backend](https://github.com/vecna/gstmxx-backend), per la ricezione dei contributi, la moderazione e la pubblicazione nel Fediverso.
+Il codice è disponibile in due repository: quello del [laboratorio Ghòstati!](https://github.com/vecna/ghostmaxxing), per l’applicazione nel browser, e [gstmxx-backend](https://github.com/vecna/gstmxx-backend), per la ricezione dei contributi, la moderazione e la pubblicazione nel Fediverso.
 
 Il riconoscimento viene elaborato sul dispositivo. Le clip vengono inviate al server soltanto quando scegli di condividerle e dai il consenso; le segnalazioni riservate seguono il [canale separato gestito da NINA](/it/ghostati/segnalazioni/).
 
-Un risultato positivo descrive ciò che è successo con quel modello e in quelle condizioni. Per sapere se un trucco funziona su un altro sistema occorre provarlo. È il lavoro che vogliamo fare insieme: [organizzare workshop Ghòstati!](/it/blog/ghostati-workshop-ottobre-2026/), confrontare gli esperimenti e rendere verificabili i risultati.
+Un risultato positivo descrive ciò che è successo con quel modello e in quelle condizioni. Per sapere se un trucco funziona su un altro sistema occorre provarlo. È il lavoro che vogliamo fare insieme: [organizzare workshop Ghòstati!](/it/blog/come-organizzare-un-workshop-ghostati/), confrontare gli esperimenti e rendere verificabili i risultati.

@@ -5,6 +5,7 @@ url: "/en/blog/ghostati-workshop-october-2026/"
 translationKey: "ghostati-workshop-october-2026"
 image: "/images/ghostati/workshops/ws1-painting-1.jpg"
 date: 2026-10-05T12:00:00+02:00
+initiative: ghostati
 ---
 
 <div class="ghostati-workshop">
@@ -20,6 +21,8 @@ NINA’s Universal Union organises Ghòstati! workshops: collective experiments 
 <p class="content-page__lead">
 Test how little face paint changes a local face-recognition result.
 </p>
+
+This is the short version of the activity. When preparing a session, use the [complete practical guide](/en/blog/how-to-run-a-ghostati-workshop/) and the [gallery of examples](/en/ghostati/gallery/).
 
 <section>
 

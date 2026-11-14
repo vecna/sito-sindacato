@@ -2,7 +2,7 @@
 title: "Il nuovo fuzzer che prova infiniti trucchi su un video del volto: nuovo esperimento"
 description: Come provare il Local Fuzzer 1.1.0, leggere escape rate e pose atlas, condividere statistiche anonime e Ghostyle selezionati senza inviare video o descrittori.
 url: /it/blog/fuzzer-beta/
-translationKey: local-fuzzer-beta
+translationKey: ghostmaxxing-local-fuzzer-beta
 initiative: ghostati
 image: /images/ghostati/fuzzer/fuzzer-candidates.png
 date: 2026-11-12T20:00:00+01:00
