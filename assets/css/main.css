@@ -431,10 +431,20 @@ header {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.5rem;
   margin-top: 2rem;
 }
+
+.projects-grid--count-2 > .project-card,
+.projects-grid--count-4 > .project-card { grid-column: span 3; }
+
+.projects-grid--count-3 > .project-card,
+.projects-grid--count-5 > .project-card,
+.projects-grid--count-6 > .project-card { grid-column: span 2; }
+
+.projects-grid--count-5 > .project-card:nth-child(4) { grid-column: 2 / span 2; }
+.projects-grid--count-5 > .project-card:nth-child(5) { grid-column: 4 / span 2; }
 
 .project-card {
   padding: 2rem;
@@ -443,13 +453,19 @@ header {
   justify-content: space-between;
   min-height: 200px;
   text-decoration: none;
-  color: var(--black);
-  transition: opacity 0.2s;
+  color: var(--card-text, var(--black));
+  transition: transform .18s ease, box-shadow .18s ease;
   background: var(--card-bg, var(--card-1));
   font-size: 1.2rem;
 }
 
-.project-card:hover { opacity: 0.88; text-decoration: none; }
+.project-card:hover,
+.project-card:focus-visible {
+  color: var(--card-text, var(--black));
+  text-decoration: none;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 var(--black);
+}
 
 /* Default color cycling */
 .project-card:nth-child(4n+1) { background: var(--card-bg, var(--card-1)); }
@@ -458,7 +474,7 @@ header {
 .project-card:nth-child(4n+4) { background: var(--card-bg, var(--card-4)); }
 
 /* First card (pink) has white text for contrast */
-.project-card:nth-child(4n+1) { color: var(--white); }
+.project-card:nth-child(4n+1) { --card-text: var(--white); }
 
 .project-card h3 {
   font-family: var(--font-display);
@@ -867,6 +883,14 @@ body.section-praxis .site-footer p {
 }
 
 @media (max-width: 900px) {
+  .projects-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+  .projects-grid > .project-card { grid-column: span 2; }
+
+  .projects-grid > .project-card:last-child:nth-child(odd) {
+    grid-column: 2 / span 2;
+  }
+
   .sidenote-layout .content-body { width: 100%; }
 
   .sidenote {
@@ -886,11 +910,15 @@ body.section-praxis .site-footer p {
 }
 
 @media (max-width: 768px) {
-  .projects-grid { grid-template-columns: 1fr; }
-
   h1 { font-size: 1.8rem; }
 
   .page-content { padding: 2rem 5vw; }
+}
+
+@media (max-width: 600px) {
+  .projects-grid { grid-template-columns: 1fr; }
+  .projects-grid > .project-card,
+  .projects-grid > .project-card:last-child:nth-child(odd) { grid-column: auto; }
 }
 
 /* ==========================================================================

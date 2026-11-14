@@ -5,8 +5,9 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 
-    <div class="projects-grid">
-      {{ range .Pages }}
+    {{ $projects := .Pages }}
+    <div class="projects-grid projects-grid--count-{{ len $projects }}">
+      {{ range $projects }}
       <a href="{{ .RelPermalink }}" class="project-card"
          {{ with .Params.card_color }}style="--card-bg: {{ . }}"{{ end }}>
         <div>
