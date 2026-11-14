@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="page-content ghostati-gallery-page">
+  <div class="content-body-wide">
+    <div class="label">Ghòstati! · Gallery</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="initiative-subtitle">{{ . }}</p>{{ end }}
+    <div class="ghostati-gallery-intro">{{ .Content }}</div>
+    <div class="ghostati-gallery">
+      {{ range .Params.gallery_items }}
+      {{ $item := . }}
+      <figure class="ghostati-gallery__item">
+        <img src="{{ .src }}" alt="{{ .title }}" loading="lazy">
+        <figcaption>
+          <h2>{{ .title }}</h2>
+          <p>{{ .caption }}</p>
+          {{ with .video }}
+          <video class="ghostati-gallery__video" autoplay muted loop playsinline preload="metadata" aria-label="Verifica video: {{ $item.title }}">
+            <source src="{{ . }}" type="video/mp4">
+            <a href="{{ . }}">Apri il video della verifica</a>
+          </video>
+          {{ end }}
+          {{ with .outcome }}<p class="ghostati-gallery__outcome"><strong>Esito documentato:</strong> {{ . }}</p>{{ end }}
+        </figcaption>
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

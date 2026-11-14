@@ -5,6 +5,7 @@ url: "/it/blog/ghostati-new-software/"
 translationKey: "ghostati-new-software"
 image: "/images/ghostati/workshops/ws1-painting-1.jpg"
 date: 2026-10-01
+initiative: "ghostati"
 ---
 
 Il laboratorio di **Ghòstati!** si rinnova. Puoi salvare il tuo volto, cambiare il trucco, disegnare un intervento digitale e osservare dove un sistema di analisi del viso smette di seguirti o di riconoscerti.

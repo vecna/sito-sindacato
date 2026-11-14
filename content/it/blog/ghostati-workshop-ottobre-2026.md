@@ -1,10 +1,11 @@
 ---
-title: "Ghòstati! Il workshop — Porta la faccia e la curiosità"
-description: "Come organizzare un workshop di Ghòstati!, per spaccarsi la faccia che il riconoscimento automatizzato vorrebbe vedere."
-url: "/it/blog/ghostati-workshop-ottobre-2026/"
-translationKey: "ghostati-workshop-october-2026"
-image: "/images/ghostati/workshops/ws1-painting-1.jpg"
+title: "Ghòstati! Il workshop: Porta la faccia e la curiosità"
+description: Come organizzare un workshop di Ghòstati!, per spaccarsi la faccia che il riconoscimento automatizzato vorrebbe vedere.
+url: /it/blog/ghostati-workshop-ottobre-2026/
+translationKey: ghostati-workshop-october-2026
+image: /images/ghostati/workshops/ws1-painting-1.jpg
 date: 2026-10-05T12:00:00+02:00
+initiative: ghostati
 ---
 
 Il Sindacato Universale di NINA organizza i workshop **Ghòstati!**: esperimenti collettivi di autodifesa visiva contro la sorveglianza biometrica.

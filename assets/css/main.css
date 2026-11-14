@@ -1036,3 +1036,107 @@ body.section-blog .csv-table__table thead th {
 .ghostati-report .audience-card__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .ghostati-report .audience-card__access { display: inline-flex; align-items: center; gap: .4rem; }
 .ghostati-report .audience-card__access img { width: 24px; height: 24px; }
+
+/* Ghòstati! editorial media: a looping image/video beside Markdown text. */
+.media-text {
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.media-text--right .media-text__media { order: 2; }
+.media-text__media { margin: 0; min-width: 0; }
+.media-text__media img,
+.media-text__media video { display: block; width: 100%; max-height: 72vh; object-fit: contain; background: #111; }
+.media-text__media figcaption { margin-top: .55rem; font-size: .85rem; color: var(--color-text-muted); }
+.media-text__copy > :first-child { margin-top: 0; }
+.media-text__copy > :last-child { margin-bottom: 0; }
+.media-text--checklist {
+  grid-template-columns: minmax(180px, .65fr) minmax(0, 1.35fr);
+  align-items: stretch;
+}
+.media-text--checklist .media-text__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.media-text--checklist .media-text__copy {
+  margin: 0;
+  padding: 1.2rem 1.4rem;
+  border: 2px solid var(--black);
+  background: color-mix(in srgb, var(--lime) 28%, var(--white));
+}
+.media-text--checklist .media-text__copy,
+.media-text--checklist .media-text__copy h3,
+.media-text--checklist .media-text__copy li,
+.media-text--checklist .media-text__copy a { color: var(--black); }
+.media-text--checklist .media-text__copy h3 { margin-top: 0; }
+
+/* Contextual navigation, rendered only on pages with initiative: ghostati. */
+.ghostati-strip {
+  position: relative;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto auto 76px;
+  gap: 1rem;
+  align-items: center;
+  padding: .75rem max(4vw, 1rem);
+  color: var(--black);
+  background: var(--lime);
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+}
+.ghostati-strip__copy { display: grid; line-height: 1.25; }
+.ghostati-strip__copy strong { font-family: var(--font-display); font-size: 1.25rem; }
+.ghostati-strip__copy span { font-size: .8rem; }
+.ghostati-strip__thumbs { display: flex; gap: 4px; text-decoration: none; }
+.ghostati-strip__thumbs img { width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--black); }
+.ghostati-strip__links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-family: var(--font-mono); font-size: .72rem; font-weight: 700; }
+body .ghostati-strip__links a,
+body .ghostati-strip__links a:visited { color: var(--black); }
+body .ghostati-strip__links a:hover,
+body .ghostati-strip__links a:focus-visible { color: #3b164f; }
+.ghostati-strip__qr img { display: block; width: 68px; height: 68px; background: white; }
+body > .ghostati-strip { margin-top: var(--nav-height); }
+body > .ghostati-strip + .page-offset { margin-top: 0; }
+
+/* Autonomous Ghòstati! gallery. */
+.ghostati-gallery-intro { max-width: 760px; }
+.ghostati-gallery { columns: 2 360px; column-gap: 1.25rem; margin-top: 2.5rem; }
+.ghostati-gallery__item { display: inline-block; width: 100%; margin: 0 0 1.25rem; border: 1px solid var(--black); background: white; break-inside: avoid; }
+.ghostati-gallery__item > img { display: block; width: 100%; height: auto; }
+.ghostati-gallery__item figcaption { padding: 1rem; }
+.ghostati-gallery__item h2 { margin: .3rem 0 .55rem; font-style: normal; font-weight: 750; }
+.ghostati-gallery__item p { font-size: .95rem; margin-bottom: .65rem; }
+.ghostati-gallery__video { display: block; width: 100%; height: auto; margin-top: 1rem; background: var(--black); }
+.ghostati-gallery__outcome { padding-top: .65rem; border-top: 1px solid var(--color-border); }
+
+/* Full-width screenshots and diagrams inside long-form articles. */
+.article-figure { margin: 2rem 0 2.5rem; }
+.article-figure img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--color-border); }
+.article-figure figcaption { margin-top: .6rem; font-size: .85rem; line-height: 1.5; color: var(--color-text-muted); }
+
+/* Workshop utility blocks. */
+.ghostati-checklist { margin: 1.5rem 0; padding: 1.2rem 1.4rem; border: 2px solid var(--black); background: color-mix(in srgb, var(--lime) 28%, var(--white)); }
+.ghostati-checklist h2 { margin-top: 0; }
+.ghostati-checklist,
+.ghostati-checklist h2,
+.ghostati-checklist li,
+.ghostati-checklist a { color: var(--black); }
+.ghostati-timebox { display: grid; grid-template-columns: 8rem 1fr; gap: .4rem 1rem; margin: 1.5rem 0; }
+.ghostati-timebox dt { font-family: var(--font-mono); font-size: .8rem; font-weight: 700; }
+.ghostati-timebox dd { margin: 0 0 .45rem; }
+
+@media (max-width: 760px) {
+  .media-text,
+  .media-text--checklist { grid-template-columns: minmax(0, 1fr); }
+  .media-text--right .media-text__media { order: 0; }
+  .media-text__media img,
+  .media-text__media video { max-height: 65vh; }
+  .ghostati-strip { grid-template-columns: 1fr auto; }
+  .ghostati-strip__thumbs { grid-row: 2; grid-column: 1 / -1; overflow: hidden; }
+  .ghostati-strip__links { grid-row: 3; grid-column: 1 / -1; }
+  .ghostati-strip__qr { grid-row: 1; grid-column: 2; }
+  .ghostati-timebox { grid-template-columns: 1fr; }
+}

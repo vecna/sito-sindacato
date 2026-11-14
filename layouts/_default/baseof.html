@@ -21,6 +21,10 @@
 <body class="{{ with .Section }}section-{{ . }}{{ end }}{{ if .IsHome }} page-home{{ end }}">
   {{- partial "header.html" . -}}
 
+  {{- if eq .Params.initiative "ghostati" -}}
+    {{- partial "ghostati-strip.html" . -}}
+  {{- end -}}
+
   <main class="page-offset">
     {{- block "main" . }}{{- end }}
   </main>

@@ -7,6 +7,7 @@ translationKey: "initiative-ghostati"
 description: "Ghòstati! è l’iniziativa di NINA per workshop di autodifesa visiva e segnalazioni riservate sulla sorveglianza biometrica."
 image: "/images/ghostati/workshops/ws1-painting-1.jpg"
 seoDynamic: true
+initiative: "ghostati"
 ---
 
 ## L'applicazione 
@@ -24,7 +25,9 @@ seoDynamic: true
 
 **Ghòstati!** è l’iniziativa del Sindacato Universale di NINA, con lo stesso nome in italiano e in inglese. NINA organizza i workshop e gestisce la raccolta riservata di informazioni sui sistemi di riconoscimento facciale.
 
-* [Organizza un workshop: guida pratica e gruppo Signal](/it/blog/ghostati-workshop-ottobre-2026/).
+* [Organizza un workshop: checklist, tempi e guida pratica](/it/blog/come-organizzare-un-workshop-ghostati/).
+* [Guarda la gallery di esempi, prove e lavori in corso](/it/ghostati/gallery/).
+* [Prova il Local Fuzzer 1.1.0 e partecipa al beta test](/it/blog/fuzzer-ghostmaxxing-beta/).
 * [Segnala un sistema: cinque percorsi e indicazioni di sicurezza](/it/ghostati/segnalazioni/).
 
 ## Cosa ? Perché ?

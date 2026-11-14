@@ -4,6 +4,7 @@ description: "Cinque percorsi di segnalazione riservata sulla sorveglianza biome
 url: "/it/ghostati/segnalazioni/"
 translationKey: "ghostati-report"
 image: "/images/ghostati/nina.png"
+initiative: "ghostati"
 ---
 
 **Ghòstati!** è un’iniziativa del Sindacato Universale di NINA. NINA gestisce i canali riservati di segnalazione descritti in questa pagina.
