@@ -1,0 +1,21 @@
+{{- $english := eq .Page.Language.Lang "en" -}}
+<nav class="home-paths" aria-label="{{ if $english }}Explore the Universal Union{{ else }}Esplora il Sindacato Universale{{ end }}">
+  <a class="home-path-card home-path-card--initiatives" href="{{ if $english }}/en/initiatives/{{ else }}/it/iniziative/{{ end }}">
+    <span class="home-path-card__label">01</span>
+    <h3>{{ if $english }}Initiatives{{ else }}Iniziative{{ end }}</h3>
+    <p>{{ if $english }}Concrete experiments through which we test and question our praxis.{{ else }}Esperimenti concreti con cui mettiamo alla prova e discutiamo le nostre prassi.{{ end }}</p>
+    <span class="home-path-card__arrow" aria-hidden="true">&rarr;</span>
+  </a>
+  <a class="home-path-card home-path-card--blog" href="{{ if $english }}/en/blog/{{ else }}/it/blog/{{ end }}">
+    <span class="home-path-card__label">02</span>
+    <h3>Blog</h3>
+    <p>{{ if $english }}Guides, results, releases and open questions from the Union.{{ else }}Guide, risultati, versioni e questioni aperte dal Sindacato.{{ end }}</p>
+    <span class="home-path-card__arrow" aria-hidden="true">&rarr;</span>
+  </a>
+  <a class="home-path-card home-path-card--contact" href="https://www.nina.watch/partecipa.html">
+    <span class="home-path-card__label">03</span>
+    <h3>{{ if $english }}Contact{{ else }}Contatti{{ end }}</h3>
+    <p>{{ if $english }}Get in touch if you want to join or propose a collaboration.{{ else }}Contattaci se vuoi unirti o proporre una collaborazione.{{ end }}</p>
+    <span class="home-path-card__arrow" aria-hidden="true">&rarr;</span>
+  </a>
+</nav>

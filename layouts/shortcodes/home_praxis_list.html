@@ -1,0 +1,28 @@
+{{- $english := eq .Page.Language.Lang "en" -}}
+<nav class="home-praxis-list" aria-label="{{ if $english }}The five praxis{{ else }}Le cinque prassi{{ end }}">
+  <a href="{{ if $english }}/en/praxis/obfuscation/{{ else }}/it/prassi/offuscamento/{{ end }}">
+    <span>{{ if $english }}Obfuscation{{ else }}Offuscamento{{ end }}</span>
+    <small>{{ if $english }}introduce noise into data{{ else }}introdurre rumore nei dati{{ end }}</small>
+    <span aria-hidden="true">&rarr;</span>
+  </a>
+  <a href="{{ if $english }}/en/praxis/subversion/{{ else }}/it/prassi/sovversione/{{ end }}">
+    <span>{{ if $english }}Subversion{{ else }}Sovversione{{ end }}</span>
+    <small>{{ if $english }}divert machines from purpose{{ else }}deviare macchine dagli scopi{{ end }}</small>
+    <span aria-hidden="true">&rarr;</span>
+  </a>
+  <a href="{{ if $english }}/en/praxis/boycott/{{ else }}/it/prassi/boicottaggio/{{ end }}">
+    <span>{{ if $english }}Boycott{{ else }}Boicottaggio{{ end }}</span>
+    <small>{{ if $english }}refuse platforms and dependencies{{ else }}rifiutare piattaforme e dipendenze{{ end }}</small>
+    <span aria-hidden="true">&rarr;</span>
+  </a>
+  <a href="{{ if $english }}/en/praxis/critique/{{ else }}/it/prassi/critica/{{ end }}">
+    <span>{{ if $english }}Critique{{ else }}Critica{{ end }}</span>
+    <small>{{ if $english }}make opaque processes visible{{ else }}rendere visibili processi opachi{{ end }}</small>
+    <span aria-hidden="true">&rarr;</span>
+  </a>
+  <a href="{{ if $english }}/en/praxis/replacement/{{ else }}/it/prassi/rimpiazzo/{{ end }}">
+    <span>{{ if $english }}Replacement{{ else }}Rimpiazzo{{ end }}</span>
+    <small>{{ if $english }}transparent autonomous controllable tools{{ else }}strumenti trasparenti autonomi controllabili{{ end }}</small>
+    <span aria-hidden="true">&rarr;</span>
+  </a>
+</nav>

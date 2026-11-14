@@ -805,6 +805,110 @@ body.section-praxis .site-footer p {
   color: #1a1a1a;
 }
 
+.home-paths {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .65rem;
+  margin: 2rem 0 4rem;
+}
+
+.home-path-card {
+  min-height: 230px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  border: 1.5px solid var(--black);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.home-path-card:hover,
+.home-path-card:focus-visible {
+  color: var(--black);
+  text-decoration: none;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 var(--black);
+}
+
+.home-path-card--initiatives { background: var(--purple); }
+.home-path-card--blog { background: var(--pink); color: var(--white); }
+.home-path-card--blog:hover,
+.home-path-card--blog:focus-visible { color: var(--white); }
+.home-path-card--contact { background: var(--cyan); }
+
+.home-path-card__label {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.home-path-card h3 {
+  margin: 2rem 0 .65rem;
+  color: inherit;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.home-path-card p {
+  margin: 0;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.home-path-card__arrow {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.home-praxis-list {
+  margin: 2rem 0 4rem;
+  border-top: 1.5px solid var(--black);
+}
+
+.home-praxis-list a {
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) minmax(0, 1.5fr) auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+  text-decoration: none;
+}
+
+.home-praxis-list a:hover,
+.home-praxis-list a:focus-visible {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.home-praxis-list a > span:first-child {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  font-weight: 700;
+}
+
+.home-praxis-list small {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .home-paths { grid-template-columns: 1fr; }
+  .home-path-card { min-height: 210px; }
+  .home-praxis-list a {
+    grid-template-columns: 1fr auto;
+    gap: .25rem 1rem;
+  }
+  .home-praxis-list small { grid-column: 1; }
+  .home-praxis-list a > span:last-child { grid-column: 2; grid-row: 1 / span 2; }
+}
+
 
 /* ==========================================================================
    FOOTER

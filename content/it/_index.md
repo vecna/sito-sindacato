@@ -1,48 +1,62 @@
 ---
 title: "Sindacato"
+description: "Il Sindacato Universale Digitale organizza pratiche, iniziative e strumenti collettivi contro lo sfruttamento prodotto dalle infrastrutture digitali."
 ---
 
-# il Sindacato Universale Digitale
+# Il Sindacato Universale Digitale
 
-Nel lessico dell’economia digitale domina una parola ingannevole: _utente_. Il termine utente suggerisce passività, consumo, utilizzo marginale di un servizio.Ma il cosiddetto utente, nella realtà dell’infrastruttura digitale contemporanea, non è solo un consumatore. È un **produttore di valore**.[^1]
+Il Sindacato Universale Digitale è uno spazio di organizzazione, ricerca e sperimentazione contro lo sfruttamento prodotto dalle infrastrutture digitali. Partiamo da una constatazione: chi viene chiamato _utente_ produce dati, addestra sistemi e genera valore.
 
-Ogni gesto compiuto nello spazio digitale - scrivere, cercare, leggere, scorrere, commentare, guardare, sostare - genera dati. Ogni dato alimenta sistemi di apprendimento automatico, modelli predittivi, infrastrutture pubblicitarie e finanziarie. Ogni microframmento di comportamento umano diventa materiale economico.
-
-Ciò che viene chiamato _universo delle piattaforme_ non è altro che un’immensa **fabbrica diffusa**, nella quale miliardi di individui lavorano senza salario, senza contratto e spesso senza consapevolezza.[^2]
-
-La grande trasformazione economica del XXI secolo consiste precisamente in questo: **la cattura** **sistematica della generalità dell’esperienza umana come materia prima, come mezzo di** **produzione, come valore economico e finanziario**.[^3]
+Vogliamo trasformare questa condizione condivisa in capacità di agire: costruendo strumenti, organizzando incontri, raccogliendo testimonianze e documentando ciò che impariamo.
 
 ---
 
-{{< sezione sfondo="#c8f500" titolo="L'avvio del Sindacato durante il Festival di NINA" >}}
+## Dal lancio alla pratica
 
-### Grazie a chi è unita il [9 e 10 Maggio 2026](https://nina.watch/festival.html) per workshop, sperimentazioni e incontri. Qui il materiale usato e prodotto:
+Il Sindacato non è più soltanto un’ipotesi. Organizziamo [workshop Ghòstati!](/it/blog/come-organizzare-un-workshop-ghostati/), costruiamo strumenti, raccogliamo [testimonianze e segnalazioni riservate](/it/ghostati/segnalazioni/) e pubblichiamo ciò che impariamo.
 
-* l'applicazione [Ghòstati!](/ghostati/)
-* La presentazione del Sindacato con [Risorse Veramente Umane](/it/eventi/presentazione-RVU-Festival-2026.html)
-* La presentazione di [Bonifacio VIII](/pdf/festival-26/Bonifacio_VIII_il_chatbot_cattivo.pdf) (pdf)
-* La presentazione di [Quanti Soldi ci deve Facebook?](/pdf/festival-26/Quanti_soldi_ci_deve_facebook.pdf) (pdf), e i risultati dell'esperimento:
-  * [Facebook profit ](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-profit.html)
-  * [Facebook value calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/facebook-value-calculator.html)
-  * [Instagram money calculator](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/instagram-money-calculator.html)
-  * [Quanto ci deve Facebook](/it/iniziative/quanti-soldi-ti-deve-facebook/workshop-1/quanto_ci_deve_facebook.html)
-
-{{< /sezione >}}
-
-## Necessità di un sindacato universale digitale
-
-Ogni forma storica di lavoro ha generato, prima o poi, forme di organizzazione collettiva. La fabbrica industriale ha generato il sindacato operaio e le società di mutuo soccorso. Anche l’essere digitale deve compiere questo decisivo passo di autodifesa della propria classe che coincide con la salvaguardia e la sopravvivenza dell’intera specie. 
-La società digitale esige un sindacato universale dei produttori di valore informazionale. Questo sindacato non può essere nazionale.Le infrastrutture digitali sono transnazionali, dunque il sindacato che evochiamo deve essere un sindacato digitale universale.[^4]
-La sua funzione non è semplicemente difensiva.Deve ridefinire il rapporto tra società umane e infrastrutture tecnologiche, tra individui e collettività, tra valore economico e valore sociale, tra proprietà e improprietà, tra sfera pubblica e sfera privata
+Alcune iniziative si stanno consolidando e producono nuovi strumenti; altre devono essere corrette, sospese o rimesse in discussione. Non consideriamo questo un fallimento, ma parte del lavoro collettivo.
 
 ---
 
-Esplora [le iniziative](/it/iniziative/) per saperne di più.
+## La finzione dell’utente
 
-[^1]: Sulla concettualizzazione del lavoro digitale e l'utente come "produttore di valore" non retribuito, l'analisi fondativa è di Terranova, T. (2000), *Free Labor: Producing Culture for the Digital Economy*, in "Social Text".
+### Il lavoro digitale non si presenta come lavoro
 
-[^2]: L'idea dell'universo delle piattaforme come "fabbrica diffusa" (social factory) in cui gli individui lavorano inconsapevolmente è ampiamente decostruita in Scholz, T. (2013), *Digital Labor: The Internet as Playground and Factory*, Routledge.
+Ogni ricerca, fotografia, spostamento, commento o momento di attenzione produce informazione. Questi frammenti alimentano sistemi di apprendimento automatico, modelli predittivi e infrastrutture pubblicitarie e finanziarie. L’utente non è soltanto chi usa un servizio: è parte della catena che ne produce il valore.[^1][^2]
 
-[^3]: Il concetto di estrazione sistematica dell'esperienza umana come materia prima è il nucleo della ben nota teoria esposta in Zuboff, S. (2019), *The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power*, Profile Books.
+Questo lavoro rimane invisibile perché è diffuso nella vita quotidiana, senza orari, contratto o salario. Riconoscersi come produttori di valore informazionale è il primo passo per immaginare nuove forme di organizzazione e negoziazione collettiva.[^3]
 
-[^4]: Sull'urgenza e la necessità di nuove forme di rivendicazione transnazionali per i lavoratori dell'informazione e piattaforme digitali cooperative, cfr. Woodcock, J. & Graham, M. (2020), *The Gig Economy: A Critical Introduction*, Polity Press.
+---
+
+## Le prassi: sperimentare metodi nuovi
+
+Due secoli fa, fermare la catena produttiva con uno sciopero permetteva a chi lavorava nell’industria di rendere visibile il proprio peso. Nel capitalismo dei dati, lo sciopero tradizionale non basta più: la produzione è diffusa nella vita quotidiana, non ha un unico luogo da bloccare e le piattaforme possono assorbire l’astensione individuale.
+
+Dobbiamo quindi sperimentare metodi nuovi, documentarne gli effetti e correggerli collettivamente. Le cinque prassi non sono un regolamento concluso, ma direzioni di lavoro.
+
+{{< home_praxis_list >}}
+
+## Da dove cominciare
+
+Le iniziative mettono alla prova le prassi; il blog documenta risultati, errori e nuove versioni. Se vuoi partecipare, puoi entrare in contatto con NINA.
+
+{{< home_paths >}}
+
+---
+
+## Perché un sindacato universale
+
+### Una condizione comune richiede organizzazione
+
+La produzione digitale non appartiene a una sola professione. Coinvolge chi pubblica, conversa, si sposta con un dispositivo, lavora attraverso una piattaforma o viene classificato da un sistema automatizzato. È una condizione transnazionale, perché transnazionali sono le infrastrutture che la rendono possibile e ne concentrano il valore.[^4]
+
+Un sindacato universale non serve soltanto a difendersi. Deve costruire capacità di negoziazione, autodifesa e trasformazione: rendere leggibili i sistemi, rivendicare diritti sui dati e sul valore prodotto, e sperimentare infrastrutture coerenti con l’autonomia delle persone.
+
+Questo progetto nasce da un manifesto pubblicato dopo il Festival di NINA. [Leggi *Per un Sindacato Digitale Universale* →](/it/blog/per-un-sindacato-digitale-universale/)[^5]
+
+[^1]: Tiziana Terranova, “Free Labor: Producing Culture for the Digital Economy”, in _Social Text_, 2000.
+[^2]: Trebor Scholz, _Digital Labor: The Internet as Playground and Factory_, Routledge, 2013.
+[^3]: Shoshana Zuboff, _The Age of Surveillance Capitalism_, Profile Books, 2019.
+[^4]: Jamie Woodcock e Mark Graham, _The Gig Economy: A Critical Introduction_, Polity Press, 2020.
+[^5]: _Sindacato Universale Digitale — Il manifesto_, 2026. [Scarica la versione originale in PDF](https://www.nina.watch/riviste/pdf/5.Per_un_sindacato_digitale_universale.pdf).
